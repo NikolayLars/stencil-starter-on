@@ -16,7 +16,6 @@ export namespace Components {
     }
     interface JuliaComponent {
     }
-<<<<<<< HEAD
     interface MorizComponent {
         "city": String;
         "darkmode": () => Promise<void>;
@@ -24,8 +23,6 @@ export namespace Components {
         "socialMedia": any;
         "street": String;
     }
-=======
->>>>>>> a65bfdaaa85c44f678f04726e47689f726c3fc74
     interface MyComponent {
         /**
           * The first name
@@ -66,15 +63,12 @@ declare global {
         prototype: HTMLJuliaComponentElement;
         new (): HTMLJuliaComponentElement;
     };
-<<<<<<< HEAD
     interface HTMLMorizComponentElement extends Components.MorizComponent, HTMLStencilElement {
     }
     var HTMLMorizComponentElement: {
         prototype: HTMLMorizComponentElement;
         new (): HTMLMorizComponentElement;
     };
-=======
->>>>>>> a65bfdaaa85c44f678f04726e47689f726c3fc74
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -86,10 +80,7 @@ declare global {
         "example-component": HTMLExampleComponentElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
-<<<<<<< HEAD
         "moriz-component": HTMLMorizComponentElement;
-=======
->>>>>>> a65bfdaaa85c44f678f04726e47689f726c3fc74
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -104,15 +95,12 @@ declare namespace LocalJSX {
     }
     interface JuliaComponent {
     }
-<<<<<<< HEAD
     interface MorizComponent {
         "city"?: String;
         "plz"?: String;
         "socialMedia"?: any;
         "street"?: String;
     }
-=======
->>>>>>> a65bfdaaa85c44f678f04726e47689f726c3fc74
     interface MyComponent {
         /**
           * The first name
@@ -132,10 +120,7 @@ declare namespace LocalJSX {
         "example-component": ExampleComponent;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
-<<<<<<< HEAD
         "moriz-component": MorizComponent;
-=======
->>>>>>> a65bfdaaa85c44f678f04726e47689f726c3fc74
         "my-component": MyComponent;
     }
 }
@@ -147,10 +132,7 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
-<<<<<<< HEAD
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
-=======
->>>>>>> a65bfdaaa85c44f678f04726e47689f726c3fc74
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
