@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'moriz-component',
@@ -7,9 +7,18 @@ import { Component, Host, h } from '@stencil/core';
 })
 export class MorizComponent {
 
+  @ Prop() adress: String
+
+  @ Prop() socialMedia: any
+
+
+
   render() {
     return (
       <Host>
+        <p>Adresse:
+          
+        </p>
         <slot></slot>
       </Host>
     );
