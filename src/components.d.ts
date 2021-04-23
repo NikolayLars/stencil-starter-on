@@ -22,6 +22,16 @@ export namespace Components {
         "Unternehmensseiten": String[];
         "city": String;
         "darkmode": () => Promise<void>;
+        "imageFacebook": string;
+        "imageInstagram": string;
+        "imageLinkedIn": string;
+        "imageMastercard": string;
+        "imagePayPal": string;
+        "imageTwitter": string;
+        "imageVisa": string;
+        "imageWhatsapp": string;
+        "imageXing": string;
+        "imageYouTube": string;
         "plz": String;
         "socialMedia": any;
         "street": String;
@@ -110,6 +120,16 @@ declare namespace LocalJSX {
     interface MorizComponent {
         "Unternehmensseiten"?: String[];
         "city"?: String;
+        "imageFacebook"?: string;
+        "imageInstagram"?: string;
+        "imageLinkedIn"?: string;
+        "imageMastercard"?: string;
+        "imagePayPal"?: string;
+        "imageTwitter"?: string;
+        "imageVisa"?: string;
+        "imageWhatsapp"?: string;
+        "imageXing"?: string;
+        "imageYouTube"?: string;
         "plz"?: String;
         "socialMedia"?: any;
         "street"?: String;
