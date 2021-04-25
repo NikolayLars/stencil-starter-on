@@ -21,9 +21,21 @@ export namespace Components {
     interface MorizComponent {
         "Unternehmensseiten": String[];
         "city": String;
-        "darkmode": () => Promise<void>;
+        "imageFacebook": string;
+        "imageInstagram": string;
+        "imageLinkedIn": string;
+        "imageMastercard": string;
+        "imagePayPal": string;
+        "imageTwitter": string;
+        "imageVisa": string;
+        "imageWhatsapp": string;
+        "imageXing": string;
+        "imageYouTube": string;
         "plz": String;
         "socialMedia": any;
+        "street": String;
+    }
+    interface MorizCompronent2 {
         "street": String;
     }
     interface MyComponent {
@@ -78,6 +90,12 @@ declare global {
         prototype: HTMLMorizComponentElement;
         new (): HTMLMorizComponentElement;
     };
+    interface HTMLMorizCompronent2Element extends Components.MorizCompronent2, HTMLStencilElement {
+    }
+    var HTMLMorizCompronent2Element: {
+        prototype: HTMLMorizCompronent2Element;
+        new (): HTMLMorizCompronent2Element;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -91,6 +109,7 @@ declare global {
         "julia-component": HTMLJuliaComponentElement;
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
+        "moriz-compronent2": HTMLMorizCompronent2Element;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -110,8 +129,21 @@ declare namespace LocalJSX {
     interface MorizComponent {
         "Unternehmensseiten"?: String[];
         "city"?: String;
+        "imageFacebook"?: string;
+        "imageInstagram"?: string;
+        "imageLinkedIn"?: string;
+        "imageMastercard"?: string;
+        "imagePayPal"?: string;
+        "imageTwitter"?: string;
+        "imageVisa"?: string;
+        "imageWhatsapp"?: string;
+        "imageXing"?: string;
+        "imageYouTube"?: string;
         "plz"?: String;
         "socialMedia"?: any;
+        "street"?: String;
+    }
+    interface MorizCompronent2 {
         "street"?: String;
     }
     interface MyComponent {
@@ -135,6 +167,7 @@ declare namespace LocalJSX {
         "julia-component": JuliaComponent;
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
+        "moriz-compronent2": MorizCompronent2;
         "my-component": MyComponent;
     }
 }
@@ -148,6 +181,7 @@ declare module "@stencil/core" {
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
+            "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
