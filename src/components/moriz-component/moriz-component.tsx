@@ -1,4 +1,4 @@
-import { Component, h, Prop, Method, Host, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Host, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'moriz-component',

@@ -1,0 +1,40 @@
+* {
+  font-family: 'Montsserat', sans-serif;
+}
+:host {
+  display: block;
+}
+#footer {
+  min-height: 400px;
+  background-color: #1f2833;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2 {
+  color: #45a29e;
+}
+h2 {
+  font-size: medium;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+
+.logosPay {
+  float: right;
+  padding: 20px;
+  max-width: 20px;
+}
+.logosSM {
+  padding: 20px;
+  max-width: 20px;
+  float: left;
+}
+#SocialMedia {
+  display: flex;
+  justify-content: center;
+}

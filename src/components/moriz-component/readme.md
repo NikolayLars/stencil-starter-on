@@ -26,19 +26,6 @@
 | `street`             | --                 |             | `String`   | `undefined`                                      |
 
 
-## Methods
-
-### `darkmode() => Promise<void>`
-
-
-
-#### Returns
-
-Type: `Promise<void>`
-
-
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
