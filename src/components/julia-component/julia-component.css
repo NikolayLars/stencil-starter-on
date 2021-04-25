@@ -1,23 +1,12 @@
-:host {
-  display: block;
-  background-color: #C5C6C7;
-  border-top-color: #66FCF1;
-  border-radius: 5px;
-}
-
-:host>div {
-  border-radius: 5px;
-}
-
 *{
   font-family: 'Montsserat', sans-serif;
 }
 
 .modal {
-    position: fixed;
-    top: 35%;
-    left: 35%;
-    transform: translate(-35%, -35%) scale(0);
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border: 3px #1F2833;
     border-radius: 5px;
@@ -28,18 +17,23 @@
     padding: 30px;
 }
 .modal.active {
-    transform: translate(-35%, -35%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 .modal-header {
-    padding: 10px 15px;
+    padding: 10px 10px;
+    border-bottom: thin;
+    border-color: black;
     display:flex;
     justify-content: space-between;
     align-items: center;
     font-size: x-large;
 }
 .modal-body {
-  padding: 10px 15px;
+  padding: 10px ;
+  margin: auto;
   display: block;
+  font-size: 15px;
+  line-height: 25px;
 }
 .overlay {
     position: fixed;
@@ -76,20 +70,17 @@ button:hover{
 .main-button{
   background-color: #45A29E;
   color: white;
+  border-color: teal;
 }
 
-
 .container {
-  display: block;
+  display:block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
-  font-size: 12px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  font-size: 16px;
+  
 }
 .container input {
   position: relative;
@@ -98,10 +89,4 @@ button:hover{
   width: 20px;
   background-color: #eee;
   margin: 20px;
-}
-#option1 {
-  float:left;
-}
-#option3 {
-  float: right;
 }

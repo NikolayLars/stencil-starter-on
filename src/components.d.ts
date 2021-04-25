@@ -15,6 +15,7 @@ export namespace Components {
     interface JonaComponent {
     }
     interface JuliaComponent {
+        "titel": string;
     }
     interface MellyComponent {
     }
@@ -123,6 +124,7 @@ declare namespace LocalJSX {
     interface JonaComponent {
     }
     interface JuliaComponent {
+        "titel"?: string;
     }
     interface MellyComponent {
     }

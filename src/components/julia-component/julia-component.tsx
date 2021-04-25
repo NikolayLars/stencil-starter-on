@@ -8,9 +8,11 @@ import { Component, Host, h, Prop,} from '@stencil/core';
 
 export class JuliaComponent {
 
-  @Prop() kopfzeile :string;
-  overlay!: HTMLElement;
-  modal!: HTMLElement;
+  @Prop() titel :string;
+  overlay: HTMLElement;
+  modal: HTMLElement;
+  //acceptButton: HTMLButtonElement;
+  //moreCookieoptions: HTMLButtonElement;
 
   timer = setTimeout(() => {
     console.log("Timer läuft");
@@ -23,7 +25,7 @@ openPopup(){
     this.overlay.classList.add('active');
 }
 
-closePopup(): void{
+closePopup(){
   console.log("closed");
     this.modal.classList.remove('active');
     this.overlay.classList.remove('active');
@@ -35,7 +37,7 @@ closePopup(): void{
         <Host>
           <div class="modal" id="modal" ref={(el) => this.modal = el as HTMLElement}>
               <div class="modal-header">
-                {this.kopfzeile}
+                {this.titel}
               </div>
               <div class="modal-body">
                 <slot></slot>
@@ -47,17 +49,17 @@ closePopup(): void{
                     </label>
 
                     <label class="container" id="option2">
-                    <input class="checkbox" type="checkbox" checked/>Statistik
+                    <input class="checkbox" type="checkbox"/>Statistik
                     </label>
 
                     <label class="container" id="option3">
-                    <input class="checkbox" type="checkbox" checked/>Personalisierung
+                    <input class="checkbox" type="checkbox"/>Personalisierung
                     </label>
                     
                   </div>
                   <div id="buttonDiv">
-                      <button id="acceptCookies" class="main-button" onClick={this.closePopup}>Accept</button>
-                      <button id="moreCookieoptions" onClick={this.closePopup}>Choose Options</button>
+                      <button id="acceptCookies" class="main-button" onClick={() => this.closePopup()}>Alle auswählen</button>
+                      <button id="moreCookieoptions" onClick={() => this.closePopup()}>Auswahl bestätigen</button>
                   </div>
             </div>
             <div class="overlay" id="overlay" ref={(el) => this.overlay = el as HTMLElement}></div>
