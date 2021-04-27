@@ -12,6 +12,8 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface HeaderLn {
+    }
     interface JonaComponent {
     }
     interface JuliaComponent {
@@ -66,6 +68,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLHeaderLnElement extends Components.HeaderLn, HTMLStencilElement {
+    }
+    var HTMLHeaderLnElement: {
+        prototype: HTMLHeaderLnElement;
+        new (): HTMLHeaderLnElement;
+    };
     interface HTMLJonaComponentElement extends Components.JonaComponent, HTMLStencilElement {
     }
     var HTMLJonaComponentElement: {
@@ -105,6 +113,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "example-component": HTMLExampleComponentElement;
+        "header-ln": HTMLHeaderLnElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
         "melly-component": HTMLMellyComponentElement;
@@ -119,6 +128,8 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface HeaderLn {
     }
     interface JonaComponent {
     }
@@ -163,6 +174,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "example-component": ExampleComponent;
+        "header-ln": HeaderLn;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
         "melly-component": MellyComponent;
@@ -177,6 +189,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
