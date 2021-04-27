@@ -6,7 +6,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class MorizCompronent2 {
-  @Prop() street: String;
+  @Prop() street: string;
 
   render() {
     return (

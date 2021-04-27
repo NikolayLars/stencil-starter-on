@@ -7,10 +7,10 @@ import { Component, h, Prop, Host, getAssetPath } from '@stencil/core';
   shadow: true,
 })
 export class MorizComponent {
-  @Prop({ reflect: true }) street: String;
-  @Prop() city: String;
-  @Prop() plz: String;
-  @Prop() Unternehmensseiten: String[];
+  @Prop() street: string;
+  @Prop() city: string;
+  @Prop() plz: string;
+  @Prop() Unternehmensseiten: string[];
 
   @Prop() socialMedia: any;
 
@@ -78,8 +78,8 @@ export class MorizComponent {
           <div class="col-6">
             <h2>Adresse:</h2>
             <p>
-              {this.street}
-              {this.city}
+              {this.street} <br />
+              {this.city} <br />
               {this.plz}
             </p>
           </div>
