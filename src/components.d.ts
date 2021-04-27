@@ -20,8 +20,8 @@ export namespace Components {
     interface MellyComponent {
     }
     interface MorizComponent {
-        "Unternehmensseiten": String[];
-        "city": String;
+        "Unternehmensseiten": string[];
+        "city": string;
         "imageFacebook": string;
         "imageInstagram": string;
         "imageLinkedIn": string;
@@ -32,12 +32,12 @@ export namespace Components {
         "imageWhatsapp": string;
         "imageXing": string;
         "imageYouTube": string;
-        "plz": String;
+        "plz": string;
         "socialMedia": any;
-        "street": String;
+        "street": string;
     }
     interface MorizCompronent2 {
-        "street": String;
+        "street": string;
     }
     interface MyComponent {
         /**
@@ -129,8 +129,8 @@ declare namespace LocalJSX {
     interface MellyComponent {
     }
     interface MorizComponent {
-        "Unternehmensseiten"?: String[];
-        "city"?: String;
+        "Unternehmensseiten"?: string[];
+        "city"?: string;
         "imageFacebook"?: string;
         "imageInstagram"?: string;
         "imageLinkedIn"?: string;
@@ -141,12 +141,12 @@ declare namespace LocalJSX {
         "imageWhatsapp"?: string;
         "imageXing"?: string;
         "imageYouTube"?: string;
-        "plz"?: String;
+        "plz"?: string;
         "socialMedia"?: any;
-        "street"?: String;
+        "street"?: string;
     }
     interface MorizCompronent2 {
-        "street"?: String;
+        "street"?: string;
     }
     interface MyComponent {
         /**
