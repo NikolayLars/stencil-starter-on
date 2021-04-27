@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `street` | --        |             | `String` | `undefined` |
+| `street` | `street`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------

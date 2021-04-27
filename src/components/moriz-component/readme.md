@@ -9,8 +9,8 @@
 
 | Property             | Attribute          | Description | Type       | Default                                          |
 | -------------------- | ------------------ | ----------- | ---------- | ------------------------------------------------ |
-| `Unternehmensseiten` | --                 |             | `String[]` | `undefined`                                      |
-| `city`               | --                 |             | `String`   | `undefined`                                      |
+| `Unternehmensseiten` | --                 |             | `string[]` | `undefined`                                      |
+| `city`               | `city`             |             | `string`   | `undefined`                                      |
 | `imageFacebook`      | `image-facebook`   |             | `string`   | `'Facebook.png'`                                 |
 | `imageInstagram`     | `image-instagram`  |             | `string`   | `'Insta.png'`                                    |
 | `imageLinkedIn`      | `image-linked-in`  |             | `string`   | `'LinkedIn.png'`                                 |
@@ -21,9 +21,9 @@
 | `imageWhatsapp`      | `image-whatsapp`   |             | `string`   | `'whatsapp.png'`                                 |
 | `imageXing`          | `image-xing`       |             | `string`   | `'Xing.png'`                                     |
 | `imageYouTube`       | `image-you-tube`   |             | `string`   | `'YouTube.png'`                                  |
-| `plz`                | --                 |             | `String`   | `undefined`                                      |
+| `plz`                | `plz`              |             | `string`   | `undefined`                                      |
 | `socialMedia`        | `social-media`     |             | `any`      | `undefined`                                      |
-| `street`             | --                 |             | `String`   | `undefined`                                      |
+| `street`             | `street`           |             | `string`   | `undefined`                                      |
 
 
 ----------------------------------------------
