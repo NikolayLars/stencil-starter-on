@@ -1,6 +1,5 @@
 * {
   font-family: 'Montsserat', sans-serif;
-  color: white;
 }
 :host {
   display: block;
@@ -38,15 +37,4 @@ ul {
 #SocialMedia {
   display: flex;
   justify-content: center;
-}
-#toTop {
-  background-image: url(./assets/678-6783546_back-to-top-left-arrow-white-png-transparent.png.jpeg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 50px;
-  width: 200px;
-  border: none;
-}
-#toTop span {
-  display: none;
 }

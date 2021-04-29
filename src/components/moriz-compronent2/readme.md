@@ -1,4 +1,4 @@
-# julia-component
+# moriz-compronent2
 
 
 
@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `titel`  | `titel`   |             | `string` | `undefined` |
+| `street` | `street`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------
