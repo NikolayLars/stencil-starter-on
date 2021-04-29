@@ -17,11 +17,15 @@ export namespace Components {
     interface JuliaComponent {
     }
     interface MellyComponent {
+        "img1": string;
+        "img2": string;
+        "img3": string;
+        "img4": string;
+        "img5": string;
     }
     interface MorizComponent {
         "Unternehmensseiten": String[];
         "city": String;
-        "darkmode": () => Promise<void>;
         "imageFacebook": string;
         "imageInstagram": string;
         "imageLinkedIn": string;
@@ -116,6 +120,11 @@ declare namespace LocalJSX {
     interface JuliaComponent {
     }
     interface MellyComponent {
+        "img1"?: string;
+        "img2"?: string;
+        "img3"?: string;
+        "img4"?: string;
+        "img5"?: string;
     }
     interface MorizComponent {
         "Unternehmensseiten"?: String[];
