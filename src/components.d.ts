@@ -13,6 +13,15 @@ export namespace Components {
         "exampleToUpperCase": () => Promise<void>;
     }
     interface FlipCard {
+        "CarDescription1": string;
+        "CarDescription2": string;
+        "CarDescription3": string;
+        "CarName1": string;
+        "CarName2": string;
+        "CarName3": string;
+        "Picture1": string;
+        "Picture2": string;
+        "Picture3": string;
     }
     interface JonaComponent {
     }
@@ -131,6 +140,15 @@ declare namespace LocalJSX {
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
     interface FlipCard {
+        "CarDescription1"?: string;
+        "CarDescription2"?: string;
+        "CarDescription3"?: string;
+        "CarName1"?: string;
+        "CarName2"?: string;
+        "CarName3"?: string;
+        "Picture1"?: string;
+        "Picture2"?: string;
+        "Picture3"?: string;
     }
     interface JonaComponent {
     }
