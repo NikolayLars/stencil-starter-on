@@ -12,6 +12,8 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface FlipCard {
+    }
     interface JonaComponent {
     }
     interface JuliaComponent {
@@ -67,6 +69,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLFlipCardElement extends Components.FlipCard, HTMLStencilElement {
+    }
+    var HTMLFlipCardElement: {
+        prototype: HTMLFlipCardElement;
+        new (): HTMLFlipCardElement;
+    };
     interface HTMLJonaComponentElement extends Components.JonaComponent, HTMLStencilElement {
     }
     var HTMLJonaComponentElement: {
@@ -106,6 +114,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "example-component": HTMLExampleComponentElement;
+        "flip-card": HTMLFlipCardElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
         "melly-component": HTMLMellyComponentElement;
@@ -120,6 +129,8 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface FlipCard {
     }
     interface JonaComponent {
     }
@@ -165,6 +176,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "example-component": ExampleComponent;
+        "flip-card": FlipCard;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
         "melly-component": MellyComponent;
@@ -179,6 +191,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
