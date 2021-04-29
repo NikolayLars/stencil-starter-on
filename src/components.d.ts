@@ -20,7 +20,6 @@ export namespace Components {
     interface MellyComponent {
     }
     interface MorizComponent {
-        "Unternehmensseiten": string[];
         "city": string;
         "imageFacebook": string;
         "imageInstagram": string;
@@ -33,6 +32,7 @@ export namespace Components {
         "imageXing": string;
         "imageYouTube": string;
         "plz": string;
+        "sites": string;
         "socialMedia": any;
         "street": string;
     }
@@ -129,7 +129,6 @@ declare namespace LocalJSX {
     interface MellyComponent {
     }
     interface MorizComponent {
-        "Unternehmensseiten"?: string[];
         "city"?: string;
         "imageFacebook"?: string;
         "imageInstagram"?: string;
@@ -142,6 +141,7 @@ declare namespace LocalJSX {
         "imageXing"?: string;
         "imageYouTube"?: string;
         "plz"?: string;
+        "sites"?: string;
         "socialMedia"?: any;
         "street"?: string;
     }
