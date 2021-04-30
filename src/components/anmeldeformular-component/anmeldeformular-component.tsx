@@ -14,13 +14,11 @@ export class AnmeldeformularComponent {
   checkbox3: HTMLElement;
 
 openPopup(){
-  console.log("opened Formular");
     this.modal.classList.add('active');
     this.overlay.classList.add('active');
 }
 
 closeAnmeldung(){
-  console.log("closed Formular");
     this.modal.classList.remove('active');
     this.overlay.classList.remove('active');
 }
@@ -57,16 +55,15 @@ form.addEventListener('submit', (e) => {
   render() {
     return (
       <Host>
-        <button id="anmeldeButton" onClick={() => this.openPopup()}>Hier anmelden</button>
+        <button class="openButton" onClick={() => this.openPopup()}>Hier anmelden</button>
         <div class="modal" id="modal" ref={(el) => this.modal = el as HTMLElement}>
-              <div class="modal-header">
-              </div>
+              <div class="modal-header"> 
+                {this.titel} 
+              </div> 
               <div class="modal-body">
                 <slot></slot>
-                
               </div>
                   <div id="CheckList">
-                 
                     <table>
                       <tr>
                         <td><label class="inputContainer">Geschlecht</label></td>
@@ -102,12 +99,8 @@ form.addEventListener('submit', (e) => {
                       </tr>
                     </table> 
                   </div>
-                  <div id="buttonDiv">
-                      <button id="acceptCookies" class="main-button" onClick={() => this.closeAnmeldung()}>Abschicken</button>
-                  </div>
-                  <div class="unten">
-                  <p>Alle Felder, die mit einem * gekennzeichnet sind, sind Pflichtfelder.</p>
-                  </div>
+                      <button class="closeButton" onClick={() => this.closeAnmeldung()}>Abschicken</button>
+                  <p id="unten">Alle Felder, die mit einem * gekennzeichnet sind, sind Pflichtfelder.</p>
             </div>
             <div class="overlay" id="overlay" ref={(el) => this.overlay = el as HTMLElement}></div>
       </Host>
