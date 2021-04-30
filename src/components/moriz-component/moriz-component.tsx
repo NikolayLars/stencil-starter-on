@@ -4,7 +4,6 @@ import { Component, h, Prop, Host, getAssetPath, State } from '@stencil/core';
   tag: 'moriz-component',
   styleUrl: 'moriz-component.css',
   assetsDirs: ['assets'],
-  shadow: true,
 })
 export class MorizComponent {
   @Prop() street: string;
@@ -12,6 +11,9 @@ export class MorizComponent {
   @Prop() plz: string;
 
   @Prop() socialMedia: any;
+
+  @Prop() site1: string;
+  @Prop() url1: string;
 
   //images
   @Prop() imagePayPal = 'clipart4300803.png';
@@ -40,87 +42,68 @@ export class MorizComponent {
   render() {
     return (
       <Host>
-        <div class="container-fluid" id="footer">
-          <div class="row">
+        <div id="footer">
+          <div class="col-12">
             <p>
               <button id="toTop" onClick={() => this.toTop()}>
-                example Event abgeben
+                move to top
               </button>
             </p>
           </div>
-          <div class="row">
+          <div class="col-12">
             <h1>Stay in touch with us</h1>
-            <p>
-              <ul id="#SocialMedia">
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageFacebook}`)} alt="Logo Facebook" />
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageInstagram}`)} alt="Logo Instagram" />
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageLinkedIn}`)} alt="Logo LinedIn" />
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageTwitter}`)} alt="Logo Twitter" />
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageXing}`)} alt="Logo Xing" />
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageYouTube}`)} alt="Logo YouTube" />
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img class="logosSM" src={getAssetPath(`./assets/${this.imageWhatsapp}`)} alt="Logo Whatsapp" />
-                  </p>
-                </li>
-              </ul>
-            </p>
           </div>
-          <div class="col-6">
-            <h2>Adresse:</h2>
-            <p>
+          <div class="col-12">
+            <ul id="#SocialMedia">
+              <li>
+                <img class="logosSM" src={getAssetPath(`./assets/${this.imageFacebook}`)} alt="Logo Facebook" />
+              </li>
+              <li>
+                <p>
+                  <img class="logosSM" src={getAssetPath(`./assets/${this.imageInstagram}`)} alt="Logo Instagram" />
+                </p>
+              </li>
+              <li>
+                <img class="logosSM" src={getAssetPath(`./assets/${this.imageLinkedIn}`)} alt="Logo LinedIn" />
+              </li>
+              <li>
+                <img class="logosSM" src={getAssetPath(`./assets/${this.imageTwitter}`)} alt="Logo Twitter" />
+              </li>
+              <li>
+                <img class="logosSM" src={getAssetPath(`./assets/${this.imageXing}`)} alt="Logo Xing" />
+              </li>
+              <li>
+                <img class="logosSM" src={getAssetPath(`./assets/${this.imageYouTube}`)} alt="Logo YouTube" />
+              </li>
+              <li>
+                <img class="logosSM" src={getAssetPath(`./assets/${this.imageWhatsapp}`)} alt="Logo Whatsapp" />
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <br />
+              <h2>Adresse:</h2>
               {this.street} <br />
               {this.city} <br />
               {this.plz}
-            </p>
-          </div>
-          <div class="col-6">
-            <h2>Unternehmensseiten:</h2>
-            <p>
-              {(this.sitesObj = JSON.parse(this.sites))}
-              {this.sitesObj}
-            </p>
+            </div>
+            <div class="col-6">
+              <h2>Unternehmensseiten:</h2>
+              <a href="">{this.site1}</a>
+              {this.site1} test
+            </div>
           </div>
           <div class="row">
             <ul>
               <li>
-                <p>
-                  <img class="logosPay" src={getAssetPath(`./assets/${this.imagePayPal}`)} alt="Logo PayPal" />
-                </p>
+                <img class="logosPay" src={getAssetPath(`./assets/${this.imagePayPal}`)} alt="Logo PayPal" />
               </li>
               <li>
-                <p>
-                  <img class="logosPay" src={getAssetPath(`./assets/${this.imageVisa}`)} alt="Logo Visa" />
-                </p>
+                <img class="logosPay" src={getAssetPath(`./assets/${this.imageVisa}`)} alt="Logo Visa" />
               </li>
               <li>
-                <p>
-                  <img class="logosPay" src={getAssetPath(`./assets/${this.imageMastercard}`)} alt="Logo MasterCard" />
-                </p>
+                <img class="logosPay" src={getAssetPath(`./assets/${this.imageMastercard}`)} alt="Logo MasterCard" />
               </li>
             </ul>
           </div>

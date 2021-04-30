@@ -54,9 +54,11 @@ export namespace Components {
         "imageXing": string;
         "imageYouTube": string;
         "plz": string;
+        "site1": string;
         "sites": string;
         "socialMedia": any;
         "street": string;
+        "url1": string;
     }
     interface MorizCompronent2 {
         "street": string;
@@ -206,9 +208,11 @@ declare namespace LocalJSX {
         "imageXing"?: string;
         "imageYouTube"?: string;
         "plz"?: string;
+        "site1"?: string;
         "sites"?: string;
         "socialMedia"?: any;
         "street"?: string;
+        "url1"?: string;
     }
     interface MorizCompronent2 {
         "street"?: string;

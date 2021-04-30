@@ -1,6 +1,6 @@
 * {
   font-family: 'Montsserat', sans-serif;
-  color: white;
+  /*color: white; */
 }
 :host {
   display: block;
@@ -33,6 +33,7 @@ ul {
 .logosSM {
   padding: 20px;
   max-width: 20px;
+  max-height: 20px;
   float: left;
 }
 #SocialMedia {
@@ -40,12 +41,11 @@ ul {
   justify-content: center;
 }
 #toTop {
-  background-image: url(./assets/678-6783546_back-to-top-left-arrow-white-png-transparent.png.jpeg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: none;
   height: 50px;
   width: 200px;
   border: none;
+  text-align: center;
 }
 #toTop span {
   display: none;
