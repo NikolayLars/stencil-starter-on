@@ -12,17 +12,19 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
-    interface HeaderLn {
     interface FlipCard {
-        "CarDescription1": string;
-        "CarDescription2": string;
-        "CarDescription3": string;
-        "CarName1": string;
-        "CarName2": string;
-        "CarName3": string;
         "Picture1": string;
         "Picture2": string;
         "Picture3": string;
+        "cardescriptionone": string;
+        "cardescriptionthree": string;
+        "cardescriptiontwo": string;
+        "carnameone": string;
+        "carnamethree": string;
+        "carnametwo": string;
+        "plz": string;
+    }
+    interface HeaderLn {
     }
     interface JonaComponent {
     }
@@ -37,9 +39,7 @@ export namespace Components {
         "img5": string;
     }
     interface MorizComponent {
-
-        "Unternehmensseiten": String[];
-        "city": String;
+        "city": string;
         "imageFacebook": string;
         "imageInstagram": string;
         "imageLinkedIn": string;
@@ -86,16 +86,17 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
-    interface HTMLHeaderLnElement extends Components.HeaderLn, HTMLStencilElement {
-    }
-    var HTMLHeaderLnElement: {
-        prototype: HTMLHeaderLnElement;
-        new (): HTMLHeaderLnElement;
     interface HTMLFlipCardElement extends Components.FlipCard, HTMLStencilElement {
     }
     var HTMLFlipCardElement: {
         prototype: HTMLFlipCardElement;
         new (): HTMLFlipCardElement;
+    };
+    interface HTMLHeaderLnElement extends Components.HeaderLn, HTMLStencilElement {
+    }
+    var HTMLHeaderLnElement: {
+        prototype: HTMLHeaderLnElement;
+        new (): HTMLHeaderLnElement;
     };
     interface HTMLJonaComponentElement extends Components.JonaComponent, HTMLStencilElement {
     }
@@ -136,8 +137,8 @@ declare global {
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "example-component": HTMLExampleComponentElement;
-        "header-ln": HTMLHeaderLnElement;
         "flip-card": HTMLFlipCardElement;
+        "header-ln": HTMLHeaderLnElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
         "melly-component": HTMLMellyComponentElement;
@@ -153,17 +154,19 @@ declare namespace LocalJSX {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
-    interface HeaderLn {
     interface FlipCard {
-        "CarDescription1"?: string;
-        "CarDescription2"?: string;
-        "CarDescription3"?: string;
-        "CarName1"?: string;
-        "CarName2"?: string;
-        "CarName3"?: string;
         "Picture1"?: string;
         "Picture2"?: string;
         "Picture3"?: string;
+        "cardescriptionone"?: string;
+        "cardescriptionthree"?: string;
+        "cardescriptiontwo"?: string;
+        "carnameone"?: string;
+        "carnamethree"?: string;
+        "carnametwo"?: string;
+        "plz"?: string;
+    }
+    interface HeaderLn {
     }
     interface JonaComponent {
     }
@@ -214,8 +217,8 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "example-component": ExampleComponent;
-        "header-ln": HeaderLn;
         "flip-card": FlipCard;
+        "header-ln": HeaderLn;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
         "melly-component": MellyComponent;
@@ -230,8 +233,8 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
-            "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
+            "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
