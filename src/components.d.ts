@@ -11,10 +11,6 @@ export namespace Components {
     interface AnmeldeformularComponent {
         "titel": string;
     }
-    interface ExampleComponent {
-        "exampleProp": string;
-        "exampleToUpperCase": () => Promise<void>;
-    }
     interface FlipCard {
         "Picture1": string;
         "Picture2": string;
@@ -63,20 +59,6 @@ export namespace Components {
     interface MorizCompronent2 {
         "street": string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
 }
 declare global {
     interface HTMLAdrianComponentElement extends Components.AdrianComponent, HTMLStencilElement {
@@ -90,12 +72,6 @@ declare global {
     var HTMLAnmeldeformularComponentElement: {
         prototype: HTMLAnmeldeformularComponentElement;
         new (): HTMLAnmeldeformularComponentElement;
-    };
-    interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
-    }
-    var HTMLExampleComponentElement: {
-        prototype: HTMLExampleComponentElement;
-        new (): HTMLExampleComponentElement;
     };
     interface HTMLFlipCardElement extends Components.FlipCard, HTMLStencilElement {
     }
@@ -139,16 +115,9 @@ declare global {
         prototype: HTMLMorizCompronent2Element;
         new (): HTMLMorizCompronent2Element;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
-        "example-component": HTMLExampleComponentElement;
         "flip-card": HTMLFlipCardElement;
         "header-ln": HTMLHeaderLnElement;
         "jona-component": HTMLJonaComponentElement;
@@ -156,7 +125,6 @@ declare global {
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
         "moriz-compronent2": HTMLMorizCompronent2Element;
-        "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
@@ -164,10 +132,6 @@ declare namespace LocalJSX {
     }
     interface AnmeldeformularComponent {
         "titel"?: string;
-    }
-    interface ExampleComponent {
-        "exampleProp"?: string;
-        "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
     interface FlipCard {
         "Picture1"?: string;
@@ -217,24 +181,9 @@ declare namespace LocalJSX {
     interface MorizCompronent2 {
         "street"?: string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "anmeldeformular-component": AnmeldeformularComponent;
-        "example-component": ExampleComponent;
         "flip-card": FlipCard;
         "header-ln": HeaderLn;
         "jona-component": JonaComponent;
@@ -242,7 +191,6 @@ declare namespace LocalJSX {
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
         "moriz-compronent2": MorizCompronent2;
-        "my-component": MyComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -251,7 +199,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
-            "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
@@ -259,7 +206,6 @@ declare module "@stencil/core" {
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
             "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }
