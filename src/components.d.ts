@@ -8,6 +8,9 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdrianComponent {
     }
+    interface AnmeldeformularComponent {
+        "titel": string;
+    }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
@@ -61,6 +64,12 @@ declare global {
         prototype: HTMLAdrianComponentElement;
         new (): HTMLAdrianComponentElement;
     };
+    interface HTMLAnmeldeformularComponentElement extends Components.AnmeldeformularComponent, HTMLStencilElement {
+    }
+    var HTMLAnmeldeformularComponentElement: {
+        prototype: HTMLAnmeldeformularComponentElement;
+        new (): HTMLAnmeldeformularComponentElement;
+    };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
     var HTMLExampleComponentElement: {
@@ -105,6 +114,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
+        "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
         "example-component": HTMLExampleComponentElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
@@ -116,6 +126,9 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AdrianComponent {
+    }
+    interface AnmeldeformularComponent {
+        "titel"?: string;
     }
     interface ExampleComponent {
         "exampleProp"?: string;
@@ -164,6 +177,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
+        "anmeldeformular-component": AnmeldeformularComponent;
         "example-component": ExampleComponent;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
@@ -178,6 +192,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
+            "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
