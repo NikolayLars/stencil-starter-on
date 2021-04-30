@@ -8,9 +8,15 @@
 a {
   color: white;
 }
+
 table tr td {
   text-align: center;
 }
+/*
+#tableWrapper {
+  position: relative;
+}
+*/
 #footer {
   min-height: 400px;
   background-color: #1f2833;
@@ -20,6 +26,15 @@ table tr td {
 table {
   width: 100%;
 }
+/*
+.tableRow {
+  text-align: center;
+  align-content: center;
+}
+.tableCol {
+  align-content: center;
+}
+*/
 h1 {
   text-align: center;
 }
@@ -43,7 +58,11 @@ ul {
   padding: 5px;
   max-width: 20px;
   max-height: 20px;
-  float: left;
+  /*
+  margin-left: 2%;
+  margin-right: 2%;
+  align-content: center; */
+  float: left; /* das hatte ich ausgeklammert*/
 }
 #toTop {
   cursor: pointer;
