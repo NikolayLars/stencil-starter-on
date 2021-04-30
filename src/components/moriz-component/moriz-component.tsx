@@ -1,4 +1,4 @@
-import { Component, h, Prop, Host, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Host, getAssetPath, State } from '@stencil/core';
 
 @Component({
   tag: 'moriz-component',
@@ -10,7 +10,6 @@ export class MorizComponent {
   @Prop() street: string;
   @Prop() city: string;
   @Prop() plz: string;
-  @Prop() Unternehmensseiten: string[];
 
   @Prop() socialMedia: any;
 
@@ -26,13 +25,29 @@ export class MorizComponent {
   @Prop() imageXing = 'Xing.png';
   @Prop() imageYouTube = 'YouTube.png';
 
-  //@Method()
-  //darkmode() {}
+  // ------------------
+
+  @Prop() sites: string;
+
+  @State() sitesObj: string[] = [];
+
+  //----------------------
+  private toTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
 
   render() {
     return (
       <Host>
         <div class="container-fluid" id="footer">
+          <div class="row">
+            <p>
+              <button id="toTop" onClick={() => this.toTop()}>
+                example Event abgeben
+              </button>
+            </p>
+          </div>
           <div class="row">
             <h1>Stay in touch with us</h1>
             <p>
@@ -86,13 +101,8 @@ export class MorizComponent {
           <div class="col-6">
             <h2>Unternehmensseiten:</h2>
             <p>
-              {() => {
-                for (var i = 0; i < this.Unternehmensseiten.length; i++) {
-                  {
-                    this.Unternehmensseiten[i];
-                  }
-                }
-              }}
+              {(this.sitesObj = JSON.parse(this.sites))}
+              {this.sitesObj}
             </p>
           </div>
           <div class="row">
@@ -119,23 +129,3 @@ export class MorizComponent {
     );
   }
 }
-/*
-@Prop({reflect: true}) sites: string;
-
-@State() sitesObj: string[] = [];
-
-@Watch('sites')
-handleChange() {
-this.parseSites();
-}
-
-parseSites() {
-if (this.sites) {
-this.sitesObj = JSON.parse(this.sites);
-}
-}
-
-componentWillRender() {
-this.parseSites();
-}
-*/

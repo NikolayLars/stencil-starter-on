@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { Component, h, Prop, Host, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Host, getAssetPath, State } from '@stencil/core';
 let MorizComponent = class MorizComponent {
     constructor() {
         //images
@@ -18,12 +18,20 @@ let MorizComponent = class MorizComponent {
         this.imageWhatsapp = 'whatsapp.png';
         this.imageXing = 'Xing.png';
         this.imageYouTube = 'YouTube.png';
+        this.sitesObj = [];
+        //----------------------
+        this.toTop = (ev) => {
+            console.log(ev);
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
     }
-    //@Method()
-    //darkmode() {}
     render() {
         return (h(Host, null,
             h("div", { class: "container-fluid", id: "footer" },
+                h("div", { class: "row" },
+                    h("p", null,
+                        h("button", { onClick: ev => this.toTop(ev) }, "exampleEvent abgeben"))),
                 h("div", { class: "row" },
                     h("h1", null, "Stay in touch with us"),
                     h("p", null,
@@ -53,17 +61,17 @@ let MorizComponent = class MorizComponent {
                     h("h2", null, "Adresse:"),
                     h("p", null,
                         this.street,
+                        " ",
+                        h("br", null),
                         this.city,
+                        " ",
+                        h("br", null),
                         this.plz)),
                 h("div", { class: "col-6" },
                     h("h2", null, "Unternehmensseiten:"),
-                    h("p", null, () => {
-                        for (var i = 0; i < this.Unternehmensseiten.length; i++) {
-                            {
-                                this.Unternehmensseiten[i];
-                            }
-                        }
-                    })),
+                    h("p", null,
+                        (this.sitesObj = JSON.parse(this.sites)),
+                        this.sitesObj)),
                 h("div", { class: "row" },
                     h("ul", null,
                         h("li", null,
@@ -78,7 +86,7 @@ let MorizComponent = class MorizComponent {
     }
 };
 __decorate([
-    Prop({ reflect: true })
+    Prop()
 ], MorizComponent.prototype, "street", void 0);
 __decorate([
     Prop()
@@ -86,9 +94,6 @@ __decorate([
 __decorate([
     Prop()
 ], MorizComponent.prototype, "plz", void 0);
-__decorate([
-    Prop()
-], MorizComponent.prototype, "Unternehmensseiten", void 0);
 __decorate([
     Prop()
 ], MorizComponent.prototype, "socialMedia", void 0);
@@ -122,6 +127,12 @@ __decorate([
 __decorate([
     Prop()
 ], MorizComponent.prototype, "imageYouTube", void 0);
+__decorate([
+    Prop()
+], MorizComponent.prototype, "sites", void 0);
+__decorate([
+    State()
+], MorizComponent.prototype, "sitesObj", void 0);
 MorizComponent = __decorate([
     Component({
         tag: 'moriz-component',
@@ -131,23 +142,3 @@ MorizComponent = __decorate([
     })
 ], MorizComponent);
 export { MorizComponent };
-/*
-@Prop({reflect: true}) sites: string;
-
-@State() sitesObj: string[] = [];
-
-@Watch('sites')
-handleChange() {
-this.parseSites();
-}
-
-parseSites() {
-if (this.sites) {
-this.sitesObj = JSON.parse(this.sites);
-}
-}
-
-componentWillRender() {
-this.parseSites();
-}
-*/
