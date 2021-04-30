@@ -1,5 +1,6 @@
-*{
+* {
   font-family: 'Montsserat', sans-serif;
+  color: white;
 }
 :host {
   display: block;
@@ -9,33 +10,43 @@
   background-color: #1f2833;
   padding: 20px;
 }
-h1{
+h1 {
   text-align: center;
 }
-h1, h2 {
-  color: #45A29E;
-  
+h1,
+h2 {
+  color: #45a29e;
 }
-h2{
+h2 {
   font-size: medium;
   font-style: normal;
 }
-ul{
+ul {
   list-style: none;
 }
-
 
 .logosPay {
   float: right;
   padding: 20px;
   max-width: 20px;
 }
-.logosSM{
+.logosSM {
   padding: 20px;
   max-width: 20px;
   float: left;
 }
-#SocialMedia{
+#SocialMedia {
   display: flex;
   justify-content: center;
+}
+#toTop {
+  background-image: url(./assets/678-6783546_back-to-top-left-arrow-white-png-transparent.png.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+#toTop span {
+  display: none;
 }

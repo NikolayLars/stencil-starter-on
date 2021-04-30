@@ -8,6 +8,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 let MorizCompronent2 = class MorizCompronent2 {
     render() {
         return (h(Host, null,
+            h("h1", null, "Hallo hallo"),
             h("p", null, this.street)));
     }
 };

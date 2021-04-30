@@ -15,15 +15,33 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface FlipCard {
+        "Picture1": string;
+        "Picture2": string;
+        "Picture3": string;
+        "cardescriptionone": string;
+        "cardescriptionthree": string;
+        "cardescriptiontwo": string;
+        "carnameone": string;
+        "carnamethree": string;
+        "carnametwo": string;
+        "plz": string;
+    }
+    interface HeaderLn {
+    }
     interface JonaComponent {
     }
     interface JuliaComponent {
         "titel": string;
     }
     interface MellyComponent {
+        "img1": string;
+        "img2": string;
+        "img3": string;
+        "img4": string;
+        "img5": string;
     }
     interface MorizComponent {
-        "Unternehmensseiten": string[];
         "city": string;
         "imageFacebook": string;
         "imageInstagram": string;
@@ -36,6 +54,7 @@ export namespace Components {
         "imageXing": string;
         "imageYouTube": string;
         "plz": string;
+        "sites": string;
         "socialMedia": any;
         "street": string;
     }
@@ -75,6 +94,18 @@ declare global {
     var HTMLExampleComponentElement: {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
+    };
+    interface HTMLFlipCardElement extends Components.FlipCard, HTMLStencilElement {
+    }
+    var HTMLFlipCardElement: {
+        prototype: HTMLFlipCardElement;
+        new (): HTMLFlipCardElement;
+    };
+    interface HTMLHeaderLnElement extends Components.HeaderLn, HTMLStencilElement {
+    }
+    var HTMLHeaderLnElement: {
+        prototype: HTMLHeaderLnElement;
+        new (): HTMLHeaderLnElement;
     };
     interface HTMLJonaComponentElement extends Components.JonaComponent, HTMLStencilElement {
     }
@@ -116,6 +147,8 @@ declare global {
         "adrian-component": HTMLAdrianComponentElement;
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
         "example-component": HTMLExampleComponentElement;
+        "flip-card": HTMLFlipCardElement;
+        "header-ln": HTMLHeaderLnElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
         "melly-component": HTMLMellyComponentElement;
@@ -134,15 +167,33 @@ declare namespace LocalJSX {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
+    interface FlipCard {
+        "Picture1"?: string;
+        "Picture2"?: string;
+        "Picture3"?: string;
+        "cardescriptionone"?: string;
+        "cardescriptionthree"?: string;
+        "cardescriptiontwo"?: string;
+        "carnameone"?: string;
+        "carnamethree"?: string;
+        "carnametwo"?: string;
+        "plz"?: string;
+    }
+    interface HeaderLn {
+    }
     interface JonaComponent {
     }
     interface JuliaComponent {
         "titel"?: string;
     }
     interface MellyComponent {
+        "img1"?: string;
+        "img2"?: string;
+        "img3"?: string;
+        "img4"?: string;
+        "img5"?: string;
     }
     interface MorizComponent {
-        "Unternehmensseiten"?: string[];
         "city"?: string;
         "imageFacebook"?: string;
         "imageInstagram"?: string;
@@ -155,6 +206,7 @@ declare namespace LocalJSX {
         "imageXing"?: string;
         "imageYouTube"?: string;
         "plz"?: string;
+        "sites"?: string;
         "socialMedia"?: any;
         "street"?: string;
     }
@@ -179,6 +231,8 @@ declare namespace LocalJSX {
         "adrian-component": AdrianComponent;
         "anmeldeformular-component": AnmeldeformularComponent;
         "example-component": ExampleComponent;
+        "flip-card": FlipCard;
+        "header-ln": HeaderLn;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
         "melly-component": MellyComponent;
@@ -194,6 +248,8 @@ declare module "@stencil/core" {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
+            "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
