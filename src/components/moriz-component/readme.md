@@ -21,11 +21,15 @@
 | `imageXing`       | `image-xing`       |             | `string` | `'Xing.png'`                                     |
 | `imageYouTube`    | `image-you-tube`   |             | `string` | `'YouTube.png'`                                  |
 | `plz`             | `plz`              |             | `string` | `undefined`                                      |
-| `site1`           | `site-1`           |             | `string` | `undefined`                                      |
+| `siteone`         | `siteone`          |             | `string` | `undefined`                                      |
 | `sites`           | `sites`            |             | `string` | `undefined`                                      |
+| `sitethree`       | `sitethree`        |             | `string` | `undefined`                                      |
+| `sitetwo`         | `sitetwo`          |             | `string` | `undefined`                                      |
 | `socialMedia`     | `social-media`     |             | `any`    | `undefined`                                      |
 | `street`          | `street`           |             | `string` | `undefined`                                      |
-| `url1`            | `url-1`            |             | `string` | `undefined`                                      |
+| `urlone`          | `urlone`           |             | `string` | `undefined`                                      |
+| `urlthree`        | `urlthree`         |             | `string` | `undefined`                                      |
+| `urltwo`          | `urltwo`           |             | `string` | `undefined`                                      |
 
 
 ----------------------------------------------

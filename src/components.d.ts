@@ -50,11 +50,15 @@ export namespace Components {
         "imageXing": string;
         "imageYouTube": string;
         "plz": string;
-        "site1": string;
+        "siteone": string;
         "sites": string;
+        "sitethree": string;
+        "sitetwo": string;
         "socialMedia": any;
         "street": string;
-        "url1": string;
+        "urlone": string;
+        "urlthree": string;
+        "urltwo": string;
     }
     interface MorizCompronent2 {
         "street": string;
@@ -172,11 +176,15 @@ declare namespace LocalJSX {
         "imageXing"?: string;
         "imageYouTube"?: string;
         "plz"?: string;
-        "site1"?: string;
+        "siteone"?: string;
         "sites"?: string;
+        "sitethree"?: string;
+        "sitetwo"?: string;
         "socialMedia"?: any;
         "street"?: string;
-        "url1"?: string;
+        "urlone"?: string;
+        "urlthree"?: string;
+        "urltwo"?: string;
     }
     interface MorizCompronent2 {
         "street"?: string;
