@@ -14,19 +14,15 @@ export class AnmeldeformularComponent {
   checkbox3: HTMLElement;
 
 openPopup(){
-  console.log("opened");
+  console.log("opened Formular");
     this.modal.classList.add('active');
     this.overlay.classList.add('active');
 }
 
-closePopup(){
-  console.log("closed");
+closeAnmeldung(){
+  console.log("closed Formular");
     this.modal.classList.remove('active');
     this.overlay.classList.remove('active');
-}
-
-checkInput(){
-  this.closePopup();
 }
 /*
 const name = document.getElementById('name')
@@ -107,7 +103,7 @@ form.addEventListener('submit', (e) => {
                     </table> 
                   </div>
                   <div id="buttonDiv">
-                      <button id="acceptCookies" class="main-button" onClick={() => this.checkInput()}>Abschicken</button>
+                      <button id="acceptCookies" class="main-button" onClick={() => this.closeAnmeldung()}>Abschicken</button>
                   </div>
                   <div class="unten">
                   <p>Alle Felder, die mit einem * gekennzeichnet sind, sind Pflichtfelder.</p>
