@@ -26,6 +26,7 @@ export namespace Components {
     interface HeaderLn {
     }
     interface JonaComponent {
+        "slHeroHeadline": string;
     }
     interface JuliaComponent {
         "titel": string;
@@ -152,6 +153,7 @@ declare namespace LocalJSX {
     interface HeaderLn {
     }
     interface JonaComponent {
+        "slHeroHeadline"?: string;
     }
     interface JuliaComponent {
         "titel"?: string;

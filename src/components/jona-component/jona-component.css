@@ -1,3 +1,49 @@
 :host {
   display: block;
+  background: #1f2833;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.jona-component {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+}
+
+#jona-component-headline{
+  text-align: center;
+  color: #f4f4f4;
+}
+
+#addProductsButton {
+  cursor: pointer;
+  background:  #45a29e;
+  color: #f4f4f4;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#addProductsButton:hover {
+  cursor: pointer;
+  background:  #f4f4f4;
+  color: #45a29e;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+ul {
+  max-width: 300px;
+  margin: 0 auto;
+  color: #f4f4f4;
+  padding-bottom: 20px;
+}
+
+ul>li {
+  font-weight: bold;
+  text-transform: uppercase
 }
