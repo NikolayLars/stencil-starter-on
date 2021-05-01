@@ -11,6 +11,7 @@ export class JonaComponent {
 
   @State() remainingButtonClicked: boolean = false;
 
+
   getProducts() {
     const products = [];
     const productsSlot = this.el.querySelectorAll('[slot="jona-component-product"]');
@@ -19,7 +20,7 @@ export class JonaComponent {
     }
     return products;
   }
-
+  
   getProductsContent() {
     const products = this.getProducts();
     let jsxContent = [];
@@ -48,26 +49,41 @@ export class JonaComponent {
   }
 
   addRemainingProducts() {
-    const jsxContent = [];
+    let jsxContent = [];
     this.getProducts().filter((_pr, index) => {return index > 1 ? true : false;})
       .map(product => jsxContent.push(<li innerHTML={product}></li>));
+      jsxContent.push(
+        <button id="closingButton"
+            onClick={e => {
+              this.remainingButtonClicked = false;
+              const btn2 = e.target as HTMLButtonElement;
+              btn2.remove; 
+              this.removeRemainingProducts();
+            }}
+          >
+            weniger anzeigen
+          </button>,
+          );
     return jsxContent;
   }
 
-  //addClosingButton(){
+  removeRemainingProducts(){
+  console.log("sas");  
+  let jsxContent = []; 
+  jsxContent.push(
+    <button
+      id="addProductsButton"
+      onClick={e => {
+        this.remainingButtonClicked = true;
+        const btn = e.target as HTMLButtonElement;
+        btn.remove();
+      }}
+    >
+      mehr anzeigen
+    </button>,
+  );
+  }
 
-  /*  jsxContent.push(
-    <button id="closingButton"
-          onClick={e => {
-            this.remainingButtonClicked = true;
-            const btn = e.target as HTMLButtonElement;
-            btn.remove();
-          }}
-        >
-          mehr anzeigen
-        </button>,
-    )}
-*/
   render() {
     return (
       <Host>
@@ -78,7 +94,8 @@ export class JonaComponent {
         <div id="jona-component-products">
           <ul>
             {this.getProductsContent()}
-            {this.remainingButtonClicked ? this.addRemainingProducts() : ''} 
+            {this.remainingButtonClicked ? this.addRemainingProducts() : ''}
+            {this.remainingButtonClicked ? '' : this.removeRemainingProducts()}
           </ul>
         </div>
       </Host>
