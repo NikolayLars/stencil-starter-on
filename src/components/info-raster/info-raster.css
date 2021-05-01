@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+#info-raster-rechts{
+  width: 100%;
+  background-color: #0B0C10;
+  display: flex;
+}
+#info-img-rechts{
+ 
+  position: relative;
+  left: 20%;
+  width: 30%;
+  height: 400px;
+  margin: 0%;
+}
+#infotitlerechts{
+  position: relative;
+    left: 30%;
+    top: 8%;
+    width: 15%;
+
+}
+#infotextrechts{
+  position: relative;
+  left: 15%;
+  margin-top: 5%;
+}
+
+
+#info-raster-links{
+  width: 100%;
+  background-color: #0B0C10;
+  display: flex;
+}
+#info-img-links{
+  position: relative;
+  left: 50%;
+  width: 30%;
+  height: 400px;
+  margin: 0%;
+
+}
+#infotitlelinks{
+  position: relative;
+  left: -7%;
+  top: 8%;
+  width: 15%;
+}
+#infotextlinks{
+  position: relative;
+  left: -20%;
+  margin-top: 5%;
+}

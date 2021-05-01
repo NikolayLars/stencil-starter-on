@@ -25,6 +25,14 @@ export namespace Components {
     }
     interface HeaderLn {
     }
+    interface InfoRaster {
+        "imginfolinks": string;
+        "imginforechts": string;
+        "infdescriptionlinks": string;
+        "infdescriptionrechts": string;
+        "infotitlelinks": string;
+        "infotitlerechts": string;
+    }
     interface JonaComponent {
         "slHeroHeadline": string;
     }
@@ -94,6 +102,12 @@ declare global {
         prototype: HTMLHeaderLnElement;
         new (): HTMLHeaderLnElement;
     };
+    interface HTMLInfoRasterElement extends Components.InfoRaster, HTMLStencilElement {
+    }
+    var HTMLInfoRasterElement: {
+        prototype: HTMLInfoRasterElement;
+        new (): HTMLInfoRasterElement;
+    };
     interface HTMLJonaComponentElement extends Components.JonaComponent, HTMLStencilElement {
     }
     var HTMLJonaComponentElement: {
@@ -141,6 +155,7 @@ declare global {
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
         "flip-card": HTMLFlipCardElement;
         "header-ln": HTMLHeaderLnElement;
+        "info-raster": HTMLInfoRasterElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
         "melly-component": HTMLMellyComponentElement;
@@ -169,6 +184,14 @@ declare namespace LocalJSX {
         "plz"?: string;
     }
     interface HeaderLn {
+    }
+    interface InfoRaster {
+        "imginfolinks"?: string;
+        "imginforechts"?: string;
+        "infdescriptionlinks"?: string;
+        "infdescriptionrechts"?: string;
+        "infotitlelinks"?: string;
+        "infotitlerechts"?: string;
     }
     interface JonaComponent {
         "slHeroHeadline"?: string;
@@ -218,6 +241,7 @@ declare namespace LocalJSX {
         "anmeldeformular-component": AnmeldeformularComponent;
         "flip-card": FlipCard;
         "header-ln": HeaderLn;
+        "info-raster": InfoRaster;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
         "melly-component": MellyComponent;
@@ -235,6 +259,7 @@ declare module "@stencil/core" {
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
+            "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;

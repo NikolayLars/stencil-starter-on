@@ -62,10 +62,10 @@ export class MellyComponent {
                   <div class="carousel-slide">
                
                     
-                    <img src={getAssetPath(`./assets/${this.img2}`)} alt=""/>
-                    <img src={getAssetPath(`./assets/${this.img3}`)} alt=""/>
-                    <img src={getAssetPath(`./assets/${this.img4}`)} alt=""/>
-                    <img src={getAssetPath(`./assets/${this.img5}`)} alt=""/>
+                    <img id="img" src={getAssetPath(`./assets/${this.img2}`)} alt=""/>
+                    <img id="img" src={getAssetPath(`./assets/${this.img3}`)} alt=""/>
+                    <img id="img" src={getAssetPath(`./assets/${this.img4}`)} alt=""/>
+                    <img id="img" src={getAssetPath(`./assets/${this.img5}`)} alt=""/>
                  </div>
             
                 </div>
