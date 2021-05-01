@@ -1,31 +1,15 @@
-import { Component, Host, h, Element } from '@stencil/core';
+import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'user-card',
-  styleUrl: 'user-card.css',
+  tag: 'slide-component',
+  styleUrl: 'slide-component.css',
   shadow: true,
 })
 export class SlideComponent {
 
-  @Element() el: HTMLElement;
-
-  createUser(){
-    console.log("createUSer");
-    const userCards = [];
-    const email = this.el.querySelectorAll('[slot="email"]');
-    const name = this.el.querySelectorAll('[slot="name"');
-    if (email) {
-      email.forEach(userCard => userCards.push(userCard.innerHTML));
-    }
-    if (name){
-      name.forEach(userCard => userCards.push(userCard.innerHTML));
-    }
-    return userCards;
-  }
-
-  /*
-  const template = document.createElement('template');
-template.innerHTML = `
+/*
+template = document.createElement('template');
+this.template.innerHTML = `
   <div class="user-card">
     <img />
     <div>
@@ -79,10 +63,6 @@ window.customElements.define('user-card', UserCard); */
   render() {
     return (
       <Host>
-        <div class="user-card">
-        {this.createUser()}
-        </div>
-        
         <slot></slot>
       </Host>
     );
@@ -90,6 +70,17 @@ window.customElements.define('user-card', UserCard); */
 
 }
 /*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap" rel="stylesheet"> 
+    <script defer src= "user-card.js"></script>
+    <title>Web Components Example</title>
+</head>
+<body>
     <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
         <div slot="email">johndoe@gmail.com</div>
         <div slot="phone">555-555-5555</div>
@@ -98,4 +89,5 @@ window.customElements.define('user-card', UserCard); */
         <div slot="email">janedoe@gmail.com</div>
         <div slot="phone">333-333-3333</div>
       </user-card>
-      */
+</body>
+</html> */ 

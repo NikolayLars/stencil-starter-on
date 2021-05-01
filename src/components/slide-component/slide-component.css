@@ -1,11 +1,9 @@
 :host {
   display: block;
-  align-content: center;
-  justify-content: center;
 }
 .user-card {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #45a29e;
   background: #1f2833;
   width: 500px;
   display: grid;
@@ -14,9 +12,6 @@
   margin-bottom: 15px;
   border-bottom: #45a29e 5px solid;
   border-radius: 5px; 
-  padding: 20px;
-  
-  
 }
 
 .user-card img {
@@ -25,13 +20,9 @@
 
 .user-card button {
   cursor: pointer;
-  background:  #ec0b0b;
-  color: #08fd3d;
+  background:  #f4f4f4;
+  color: #45a29e;
   border: 0;
   border-radius: 5px;
   padding: 5px 10px;
-}
-
-.nameFeld {
-  padding: 10px;
 }

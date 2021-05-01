@@ -64,6 +64,10 @@ export namespace Components {
     interface MorizCompronent2 {
         "street": string;
     }
+    interface SlideComponent {
+    }
+    interface UserCard {
+    }
 }
 declare global {
     interface HTMLAdrianComponentElement extends Components.AdrianComponent, HTMLStencilElement {
@@ -120,6 +124,18 @@ declare global {
         prototype: HTMLMorizCompronent2Element;
         new (): HTMLMorizCompronent2Element;
     };
+    interface HTMLSlideComponentElement extends Components.SlideComponent, HTMLStencilElement {
+    }
+    var HTMLSlideComponentElement: {
+        prototype: HTMLSlideComponentElement;
+        new (): HTMLSlideComponentElement;
+    };
+    interface HTMLUserCardElement extends Components.UserCard, HTMLStencilElement {
+    }
+    var HTMLUserCardElement: {
+        prototype: HTMLUserCardElement;
+        new (): HTMLUserCardElement;
+    };
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
@@ -130,6 +146,8 @@ declare global {
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
         "moriz-compronent2": HTMLMorizCompronent2Element;
+        "slide-component": HTMLSlideComponentElement;
+        "user-card": HTMLUserCardElement;
     }
 }
 declare namespace LocalJSX {
@@ -191,6 +209,10 @@ declare namespace LocalJSX {
     interface MorizCompronent2 {
         "street"?: string;
     }
+    interface SlideComponent {
+    }
+    interface UserCard {
+    }
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "anmeldeformular-component": AnmeldeformularComponent;
@@ -201,6 +223,8 @@ declare namespace LocalJSX {
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
         "moriz-compronent2": MorizCompronent2;
+        "slide-component": SlideComponent;
+        "user-card": UserCard;
     }
 }
 export { LocalJSX as JSX };
@@ -216,6 +240,8 @@ declare module "@stencil/core" {
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
             "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
+            "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
+            "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
         }
     }
 }
