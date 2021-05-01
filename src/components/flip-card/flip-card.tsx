@@ -31,7 +31,6 @@ export class FlipCard {
                 <div class="flip-card-back">
                   <h1>{this.carnameone}</h1>
                   <p>{this.cardescriptionone}</p>
-                  <p>teslaPicture</p>
                 </div>
               </div>
             </div>
@@ -46,7 +45,6 @@ export class FlipCard {
                   <h1>{this.carnametwo}</h1>
                   <p>{this.cardescriptiontwo}</p>
                   <p>{this.plz}</p>
-                  <p>teslaPicture</p>
                 </div>
               </div>
             </div>
@@ -60,7 +58,6 @@ export class FlipCard {
                 <div class="flip-card-back">
                   <h1>{this.carnamethree}</h1>
                   <p>{this.cardescriptionthree}</p>
-                  <p>teslaPicture</p>
                 </div>
               </div>
             </div>
