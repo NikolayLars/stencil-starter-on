@@ -18,6 +18,7 @@ right: 0;
 top: 0;
 background-color: #26313f;
 transition: 1s;
+z-index: 1031;
 }
 
 .ebn1 {
@@ -28,6 +29,7 @@ bottom: 0;
 background-color: #1f2833;
 position: fixed;
 transition: 1s;
+z-index: 1031;
 }
 
 a:link {
@@ -47,6 +49,7 @@ a{
 .exit {
   color: #45a29e;
   font-size: 45px;
+  z-index: 1031;
 }
 
 .item2{

@@ -68,9 +68,12 @@
   border: 3px solid #45A29E;
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  padding: 30px; 
-  margin-left: 45%;
-  margin-right: 40%;
+  padding: 15px;
+  position: fixed;
+  top: 10px; 
+  left: 10px;
+  z-index: 1005;
+  box-shadow: 0 0 1em white;
 }
 
 .openButton:hover{
