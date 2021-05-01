@@ -1,8 +1,8 @@
 import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'slide-component',
-  styleUrl: 'slide-component.css',
+  tag: 'user-card',
+  styleUrl: 'user-card.css',
   shadow: true,
 })
 export class SlideComponent {
