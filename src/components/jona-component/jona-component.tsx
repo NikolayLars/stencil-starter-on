@@ -49,14 +49,25 @@ export class JonaComponent {
 
   addRemainingProducts() {
     const jsxContent = [];
-    this.getProducts()
-      .filter((_pr, index) => {
-        return index > 1 ? true : false;
-      })
+    this.getProducts().filter((_pr, index) => {return index > 1 ? true : false;})
       .map(product => jsxContent.push(<li innerHTML={product}></li>));
     return jsxContent;
   }
 
+  //addClosingButton(){
+
+  /*  jsxContent.push(
+    <button id="closingButton"
+          onClick={e => {
+            this.remainingButtonClicked = true;
+            const btn = e.target as HTMLButtonElement;
+            btn.remove();
+          }}
+        >
+          mehr anzeigen
+        </button>,
+    )}
+*/
   render() {
     return (
       <Host>
@@ -67,7 +78,7 @@ export class JonaComponent {
         <div id="jona-component-products">
           <ul>
             {this.getProductsContent()}
-            {this.remainingButtonClicked ? this.addRemainingProducts() : ''}
+            {this.remainingButtonClicked ? this.addRemainingProducts() : ''} 
           </ul>
         </div>
       </Host>
