@@ -8,7 +8,6 @@ import { Component, Host, h , Prop , Element, State} from '@stencil/core';
 export class JonaComponent {
   @Prop({ reflect: true, mutable: true }) slHeroHeadline: string;
   @Element() el: HTMLElement;
-
   @State() remainingButtonClicked: boolean = false;
 
 
@@ -35,7 +34,7 @@ export class JonaComponent {
           onClick={e => {
             this.remainingButtonClicked = true;
             const btn = e.target as HTMLButtonElement;
-            btn.remove();
+            btn.style.color = "green";;
           }}
         >
           mehr anzeigen
@@ -57,8 +56,8 @@ export class JonaComponent {
             onClick={e => {
               this.remainingButtonClicked = false;
               const btn2 = e.target as HTMLButtonElement;
-              btn2.remove; 
-              this.removeRemainingProducts();
+              btn2.style.color = "red"; 
+              //this.removeRemainingProducts();
             }}
           >
             weniger anzeigen
@@ -76,14 +75,14 @@ export class JonaComponent {
       onClick={e => {
         this.remainingButtonClicked = true;
         const btn = e.target as HTMLButtonElement;
-        btn.remove();
+        btn.style.color = "yellow";;
       }}
     >
       mehr anzeigen
     </button>,
   );
   }
-
+//{this.remainingButtonClicked ? '' : this.removeRemainingProducts()}
   render() {
     return (
       <Host>
@@ -91,11 +90,10 @@ export class JonaComponent {
           <h2 id="jona-component-headline">{this.slHeroHeadline.toUpperCase()}</h2>
           <p>Hier könnten wir noch iwelche Daten reinschreiben. Und hier oben ein kleiner Text um sich zu beschreiben! #Headline.</p>
         </div>
+        <div>{this.getProductsContent()}</div>
         <div id="jona-component-products">
           <ul>
-            {this.getProductsContent()}
             {this.remainingButtonClicked ? this.addRemainingProducts() : ''}
-            {this.remainingButtonClicked ? '' : this.removeRemainingProducts()}
           </ul>
         </div>
       </Host>

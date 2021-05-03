@@ -39,7 +39,6 @@ checkAllBoxes(){
 
   render() {
     return (
-        
         <Host>
           <div class="modal" id="modal" ref={(el) => this.modal = el as HTMLElement}>
               <div class="modal-header">
