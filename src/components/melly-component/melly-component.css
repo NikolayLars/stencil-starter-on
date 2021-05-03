@@ -26,7 +26,7 @@
 #prevBtn{
   position:absolute;
 
-  font-size: 100;
+  font-size: 100px;
   color: #C5C6C7;
   
   width: 181px;
@@ -34,11 +34,17 @@
   background-color: #0B0C10;
 
 }
+#prevBtn:hover{
+  cursor: pointer;
+}
+#nextBtn:hover{
+  cursor: pointer;
+}
 #nextBtn{
   position: absolute;
   
   right:0%;
-  font-size: 100;
+  font-size: 100px;
   color: #C5C6C7;
   width: 180px;
   height: 750px;
