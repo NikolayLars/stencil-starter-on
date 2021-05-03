@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+#map {
+  overflow: hidden;
+  width: 700px;
+  position: relative;
+}

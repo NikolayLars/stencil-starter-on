@@ -39,6 +39,11 @@ export namespace Components {
     interface JuliaComponent {
         "titel": string;
     }
+    interface MapComponent {
+        "adress": string;
+        "location": string;
+        "streetNumber": string;
+    }
     interface MellyComponent {
         "img1": string;
         "img2": string;
@@ -120,6 +125,12 @@ declare global {
         prototype: HTMLJuliaComponentElement;
         new (): HTMLJuliaComponentElement;
     };
+    interface HTMLMapComponentElement extends Components.MapComponent, HTMLStencilElement {
+    }
+    var HTMLMapComponentElement: {
+        prototype: HTMLMapComponentElement;
+        new (): HTMLMapComponentElement;
+    };
     interface HTMLMellyComponentElement extends Components.MellyComponent, HTMLStencilElement {
     }
     var HTMLMellyComponentElement: {
@@ -158,6 +169,7 @@ declare global {
         "info-raster": HTMLInfoRasterElement;
         "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
+        "map-component": HTMLMapComponentElement;
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
         "moriz-compronent2": HTMLMorizCompronent2Element;
@@ -198,6 +210,11 @@ declare namespace LocalJSX {
     }
     interface JuliaComponent {
         "titel"?: string;
+    }
+    interface MapComponent {
+        "adress"?: string;
+        "location"?: string;
+        "streetNumber"?: string;
     }
     interface MellyComponent {
         "img1"?: string;
@@ -244,6 +261,7 @@ declare namespace LocalJSX {
         "info-raster": InfoRaster;
         "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
+        "map-component": MapComponent;
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
         "moriz-compronent2": MorizCompronent2;
@@ -262,6 +280,7 @@ declare module "@stencil/core" {
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
+            "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
             "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
