@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property   | Attribute   | Description | Type     | Default                     |
-| ---------- | ----------- | ----------- | -------- | --------------------------- |
-| `picture1` | `picture-1` |             | `string` | `'./Assets/sports-car.png'` |
+| Property   | Attribute   | Description | Type     | Default              |
+| ---------- | ----------- | ----------- | -------- | -------------------- |
+| `picture1` | `picture-1` |             | `string` | `'./sports-car.png'` |
 
 
 ----------------------------------------------

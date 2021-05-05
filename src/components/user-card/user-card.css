@@ -26,17 +26,13 @@
   transition: transform 1s ease-in-out;
 }
 
-.user-card img {
-  width: 100%;
-}
-
-.user-card button {
-  cursor: pointer;
-  background:  #ec0b0b;
-  color: #08fd3d;
-  border: 0;
-  border-radius: 5px;
-  padding: 5px 10px;
+#bild {
+  position: absolute;
+  padding: 5px;
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: 470px;
+  margin-top: 15px;
 }
 
 .nameFeld {
