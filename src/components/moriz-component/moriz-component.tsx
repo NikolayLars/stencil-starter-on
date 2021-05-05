@@ -10,6 +10,8 @@ export class MorizComponent {
   @Prop() city: string;
   @Prop() plz: string;
 
+  @Prop() socialMedia: any;
+
   @Prop() siteone: string;
   @Prop() urlone: string;
 
@@ -39,8 +41,7 @@ export class MorizComponent {
 
   //----------------------
   private toTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   render() {
@@ -79,13 +80,17 @@ export class MorizComponent {
               </div>
               <div>
                 <h2>Unternehmensseiten:</h2>
-                {/*document.write("<a href='" + { this: this.urltwo } + "'>" + { this: this.siteone } + ' </a>')*/}
-                {this.siteone} <br />
-                {this.urltwo} <br />
-                {this.sitetwo} <br />
-                {this.urltwo} <br />
-                {this.sitethree} <br />
-                {this.urlthree}
+                <a id="sitelinks" href={this.urlone}>
+                  {this.siteone}
+                </a>{' '}
+                <br />
+                <a id="sitelinks" href={this.urltwo}>
+                  {this.sitetwo}
+                </a>{' '}
+                <br />
+                <a id="sitelinks" href={this.urlthree}>
+                  {this.sitethree}
+                </a>
               </div>
             </div>
             <div class="tableRow">

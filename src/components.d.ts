@@ -68,6 +68,7 @@ export namespace Components {
         "sites": string;
         "sitethree": string;
         "sitetwo": string;
+        "socialMedia": any;
         "street": string;
         "urlone": string;
         "urlthree": string;
@@ -248,6 +249,7 @@ declare namespace LocalJSX {
         "sites"?: string;
         "sitethree"?: string;
         "sitetwo"?: string;
+        "socialMedia"?: any;
         "street"?: string;
         "urlone"?: string;
         "urlthree"?: string;
