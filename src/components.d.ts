@@ -68,7 +68,6 @@ export namespace Components {
         "sites": string;
         "sitethree": string;
         "sitetwo": string;
-        "socialMedia": any;
         "street": string;
         "urlone": string;
         "urlthree": string;
@@ -183,7 +182,6 @@ declare global {
         "moriz-compronent2": HTMLMorizCompronent2Element;
         "slide-component": HTMLSlideComponentElement;
         "user-card": HTMLUserCardElement;
-
         "weather-ln": HTMLWeatherLnElement;
     }
 }
@@ -250,7 +248,6 @@ declare namespace LocalJSX {
         "sites"?: string;
         "sitethree"?: string;
         "sitetwo"?: string;
-        "socialMedia"?: any;
         "street"?: string;
         "urlone"?: string;
         "urlthree"?: string;
@@ -279,7 +276,6 @@ declare namespace LocalJSX {
         "moriz-compronent2": MorizCompronent2;
         "slide-component": SlideComponent;
         "user-card": UserCard;
-
         "weather-ln": WeatherLn;
     }
 }
@@ -300,7 +296,6 @@ declare module "@stencil/core" {
             "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
             "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
-
             "weather-ln": LocalJSX.WeatherLn & JSXBase.HTMLAttributes<HTMLWeatherLnElement>;
         }
     }

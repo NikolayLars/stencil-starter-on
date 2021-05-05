@@ -25,7 +25,6 @@
 | `sites`           | `sites`            |             | `string` | `undefined`                                      |
 | `sitethree`       | `sitethree`        |             | `string` | `undefined`                                      |
 | `sitetwo`         | `sitetwo`          |             | `string` | `undefined`                                      |
-| `socialMedia`     | `social-media`     |             | `any`    | `undefined`                                      |
 | `street`          | `street`           |             | `string` | `undefined`                                      |
 | `urlone`          | `urlone`           |             | `string` | `undefined`                                      |
 | `urlthree`        | `urlthree`         |             | `string` | `undefined`                                      |
