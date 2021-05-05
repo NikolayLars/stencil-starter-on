@@ -29,7 +29,9 @@ bottom: 0;
 background-color: #1f2833;
 position: fixed;
 transition: 1s;
-z-index: 1031;
+
+z-index: 1030;
+transition: 1s;
 }
 
 a:link {
