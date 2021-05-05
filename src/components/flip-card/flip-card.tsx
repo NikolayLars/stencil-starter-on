@@ -20,8 +20,7 @@ export class FlipCard {
   render() {
     return (
       <Host>
-        
-          <div id="flip-component">
+        <div id="flip-component">
           <li>
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -42,7 +41,7 @@ export class FlipCard {
                   <img id="teslaPicture" src={getAssetPath(`./assets/${this.Picture2}`)} />
                 </div>
                 <div class="flip-card-back">
-                <h1 id="carname">{this.carnametwo}</h1>
+                  <h1 id="carname">{this.carnametwo}</h1>
                   <p>{this.cardescriptiontwo}</p>
                   <p>{this.plz}</p>
                 </div>
@@ -56,14 +55,13 @@ export class FlipCard {
                   <img id="teslaPicture" src={getAssetPath(`./assets/${this.Picture3}`)} />
                 </div>
                 <div class="flip-card-back">
-                <h1 id="carname">{this.carnamethree}</h1>
+                  <h1 id="carname">{this.carnamethree}</h1>
                   <p>{this.cardescriptionthree}</p>
                 </div>
               </div>
             </div>
           </li>
-          </div>
-        
+        </div>
       </Host>
     );
   }

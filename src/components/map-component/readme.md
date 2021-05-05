@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property       | Attribute       | Description | Type     | Default     |
-| -------------- | --------------- | ----------- | -------- | ----------- |
-| `adress`       | `adress`        |             | `string` | `undefined` |
-| `location`     | `location`      |             | `string` | `undefined` |
-| `streetNumber` | `street-number` |             | `string` | `undefined` |
+| Property       | Attribute      | Description | Type     | Default     |
+| -------------- | -------------- | ----------- | -------- | ----------- |
+| `adress`       | `adress`       |             | `string` | `undefined` |
+| `location`     | `location`     |             | `string` | `undefined` |
+| `streetnumber` | `streetnumber` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

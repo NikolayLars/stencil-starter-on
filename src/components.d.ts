@@ -42,7 +42,7 @@ export namespace Components {
     interface MapComponent {
         "adress": string;
         "location": string;
-        "streetNumber": string;
+        "streetnumber": string;
     }
     interface MellyComponent {
         "img1": string;
@@ -223,7 +223,7 @@ declare namespace LocalJSX {
     interface MapComponent {
         "adress"?: string;
         "location"?: string;
-        "streetNumber"?: string;
+        "streetnumber"?: string;
     }
     interface MellyComponent {
         "img1"?: string;
