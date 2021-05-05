@@ -9,6 +9,7 @@
 
 | Property         | Attribute          | Description | Type     | Default     |
 | ---------------- | ------------------ | ----------- | -------- | ----------- |
+| `position`       | `position`         |             | `string` | `undefined` |
 | `slHeroHeadline` | `sl-hero-headline` |             | `string` | `undefined` |
 
 

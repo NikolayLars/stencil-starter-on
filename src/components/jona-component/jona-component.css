@@ -3,6 +3,10 @@
   background: #1f2833;
   margin-bottom: 10px;
   border-radius: 5px;
+  width: 50%;
+}
+.right {
+  right: 0;
 }
 
 .jona-component {

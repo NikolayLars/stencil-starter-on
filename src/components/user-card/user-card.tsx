@@ -1,13 +1,15 @@
-import { Component, Host, h, Element } from '@stencil/core';
+import { Component, Host, h, Element, Prop} from '@stencil/core';
 
 @Component({
   tag: 'user-card',
   styleUrl: 'user-card.css',
   shadow: true,
+  assetsDirs: ['Assets'],
 })
 export class SlideComponent {
 
   @Element() el: HTMLElement;
+  @Prop() picture1 ='./Assets/sports-car.png'
 
   createUser(){
     console.log("createUSer");
@@ -81,9 +83,11 @@ window.customElements.define('user-card', UserCard); */
       <Host>
         <div class="user-card">
         {this.createUser()}
+        <img  src={this.picture1} alt="Auto"/>
         </div>
         
         <slot></slot>
+        
       </Host>
     );
   }
