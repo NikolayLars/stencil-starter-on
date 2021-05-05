@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
     <title>Tesla Kaufen.de</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
-
   </head>
 
   <body>
@@ -48,86 +47,62 @@
       Weil er so geheim und ultra-secret ist. Und deine Daten sind bei uns NOCH sicherer.
     </julia-component>
     <anmeldeformular-component titel="Anmeldeformular"></anmeldeformular-component>
-    
-    <div class="container grid-md">
-      <jona-component sl-hero-headline="jetzt nicht im Angebot! &nbsp; ">
-          <div slot="jona-component-product">
-              <p>Tesla Model S</p>
-          </div>
-          <div slot="jona-component-product">
-              <p>Tesla Model 3</p>
-          </div>
-          <div slot="jona-component-product">
-              <p>Tesla Model X</p>
-          </div>
-          <div slot="jona-component-product">
-              <p>Tesla Model Y</p>
-          </div>
-          <div slot="jona-component-product">
-            <p>Tesla Model S</p>
-        </div>
-        <div slot="jona-component-product">
-            <p>Tesla Model 3</p>
-        </div>
-        <div slot="jona-component-product">
-            <p>Tesla Model X</p>
-        </div>
-        <div slot="jona-component-product">
-            <p>Tesla Model Y</p>
-        </div>
-      </sl-hero-section>
-    </div>
+
+    <jona-component sl-hero-headline="jetzt nicht im Angebot!" position="right">
+      <div slot="jona-component-product">
+        <p>Tesla Model S</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model 3</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model X</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model Y</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model S</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model 3</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model X</p>
+      </div>
+      <div slot="jona-component-product">
+        <p>Tesla Model Y</p>
+      </div>
+    </jona-component>
+
     <div>
       <user-card>
-        <div slot="name" class="nameFeld">Peter Lustig</div>
-        <div slot="email">peter.lustig@gmx.NETT </div>
+        <div slot="name" class="nameFeld">Name: Peter Lustig</div>
+        <div slot="email">Email: peter.lustig@gmx.net</div>
+        <div slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
-
-  </head>
-
-  <body>
-
-    <weather-ln></weather-ln>
-    <header-ln></header-ln>
-    <moriz-compronent2 street="musterstr. 1"></moriz-compronent2>
-    <example-component example-prop="Dies ist ein Property-Inhalt der Webcomponent"> Dies ist der Slot-Inhalt </example-component>
-    <p>Ihr könnt all diesen Content verändern und mehr Unterseiten hinzufügen</p>
-    <small>Viel Spaß beim kreativ werden :-)</small>
-</body>
-
-
       <user-card>
         <div slot="name" class="nameFeld">Joana Schwamm</div>
-        <div slot="email">joana.schwamm@kabelmail.de </div>
-        
+        <div slot="email">joana.schwamm@kabelmail.de</div>
+        <div slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
       <user-card>
         <div slot="name" class="nameFeld">Heiner Kranz</div>
-        <div slot="email">heiner.kranz@web.us </div>
-        
+        <div slot="email">heiner.kranz@web.us</div>
+        <div slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
     </div>
-<melly-component></melly-component>
-    <flip-card
-      carnameone="Model 3"
-      cardescriptionone="Blue"
-      carnametwo="Model 3"
-      cardescriptiontwo="White"
-      carnamethree="Model 3"
-      carDescriptionthree="Grey">
-    </flip-card>
-<info-raster 
-infotitlerechts="TESLA3"
-infotitlelinks="TESLAS"
-infdescriptionlinks="TESLA ist super cool"
-infdescriptionrechts="TESLA ist super cool- wirklich!!!"
-></info-raster>
-<map-component
-location="Schwäbisch Hall"
-adress="Lotharweg"
-streetnumber="10"
-></map-component>
-<moriz-component
+
+    <weather-ln></weather-ln>
+    <header-ln></header-ln>
+
+    <melly-component></melly-component>
+    <flip-card carnameone="Model 3" cardescriptionone="Blue" carnametwo="Model 3" cardescriptiontwo="White" carnamethree="Model 3" carDescriptionthree="Grey"> </flip-card>
+    <info-raster infotitlerechts="TESLA3" infotitlelinks="TESLAS" infdescriptionlinks="TESLA ist super cool" infdescriptionrechts="TESLA ist super cool- wirklich!!!"></info-raster>
+    <map-component location="Schwäbisch Hall" adress="Lotharweg" streetNumber="10"></map-component>
+  </body>
+  <footer>
+    <moriz-component
       street="Musterstr.1"
       city="mustercity"
       plz="882211"
@@ -138,8 +113,5 @@ streetnumber="10"
       sitethree="Kontakt"
       urlthree="https://www.amazon.de/gp/aw/contact-us"
     ></moriz-component>
-  </body>
-  <footer>
-    
   </footer>
 </html>

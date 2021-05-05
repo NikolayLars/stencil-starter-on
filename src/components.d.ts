@@ -34,6 +34,7 @@ export namespace Components {
         "infotitlerechts": string;
     }
     interface JonaComponent {
+        "position": string;
         "slHeroHeadline": string;
     }
     interface JuliaComponent {
@@ -80,6 +81,7 @@ export namespace Components {
     interface SlideComponent {
     }
     interface UserCard {
+        "picture1": string;
     }
     interface WeatherLn {
     }
@@ -215,6 +217,7 @@ declare namespace LocalJSX {
         "infotitlerechts"?: string;
     }
     interface JonaComponent {
+        "position"?: string;
         "slHeroHeadline"?: string;
     }
     interface JuliaComponent {
@@ -261,6 +264,7 @@ declare namespace LocalJSX {
     interface SlideComponent {
     }
     interface UserCard {
+        "picture1"?: string;
     }
     interface WeatherLn {
     }
