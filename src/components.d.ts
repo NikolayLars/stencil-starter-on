@@ -27,6 +27,15 @@ export namespace Components {
         "carnametwo": string;
         "plz": string;
     }
+    interface HeaderComponent {
+        "contact": string;
+        "contacturl": string;
+        "home": string;
+        "homeurl": string;
+        "shop": string;
+        "shopurl": string;
+        "teslaLogo": string;
+    }
     interface HeaderLn {
     }
     interface InfoRaster {
@@ -109,6 +118,12 @@ declare global {
         prototype: HTMLFlipCardElement;
         new (): HTMLFlipCardElement;
     };
+    interface HTMLHeaderComponentElement extends Components.HeaderComponent, HTMLStencilElement {
+    }
+    var HTMLHeaderComponentElement: {
+        prototype: HTMLHeaderComponentElement;
+        new (): HTMLHeaderComponentElement;
+    };
     interface HTMLHeaderLnElement extends Components.HeaderLn, HTMLStencilElement {
     }
     var HTMLHeaderLnElement: {
@@ -168,6 +183,7 @@ declare global {
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
         "cookie-component": HTMLCookieComponentElement;
         "flip-card": HTMLFlipCardElement;
+        "header-component": HTMLHeaderComponentElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
         "map-component": HTMLMapComponentElement;
@@ -200,6 +216,15 @@ declare namespace LocalJSX {
         "carnamethree"?: string;
         "carnametwo"?: string;
         "plz"?: string;
+    }
+    interface HeaderComponent {
+        "contact"?: string;
+        "contacturl"?: string;
+        "home"?: string;
+        "homeurl"?: string;
+        "shop"?: string;
+        "shopurl"?: string;
+        "teslaLogo"?: string;
     }
     interface HeaderLn {
     }
@@ -262,6 +287,7 @@ declare namespace LocalJSX {
         "anmeldeformular-component": AnmeldeformularComponent;
         "cookie-component": CookieComponent;
         "flip-card": FlipCard;
+        "header-component": HeaderComponent;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
         "map-component": MapComponent;
@@ -281,6 +307,7 @@ declare module "@stencil/core" {
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
             "cookie-component": LocalJSX.CookieComponent & JSXBase.HTMLAttributes<HTMLCookieComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
+            "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
