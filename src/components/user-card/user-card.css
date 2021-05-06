@@ -18,7 +18,6 @@
   border-radius: 5px; 
   padding: 20px;
   position: relative;
-  transition: transform 1s ease-in-out;
   left: -450px;
 }
 .user-card:hover {
@@ -35,6 +34,6 @@
   margin-top: 15px;
 }
 
-.nameFeld {
-  padding: 10px;
+.grid{
+  display: grid;
 }
