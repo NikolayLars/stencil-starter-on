@@ -21,7 +21,7 @@ export class FlipCard {
     return (
       <Host>
         <div id="flip-component">
-          <li>
+     
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -33,8 +33,7 @@ export class FlipCard {
                 </div>
               </div>
             </div>
-          </li>
-          <li>
+       
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -47,8 +46,7 @@ export class FlipCard {
                 </div>
               </div>
             </div>
-          </li>
-          <li>
+          
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -60,7 +58,7 @@ export class FlipCard {
                 </div>
               </div>
             </div>
-          </li>
+       
         </div>
       </Host>
     );

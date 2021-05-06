@@ -42,7 +42,8 @@ export class TextComponent {
           onClick={e => {
             this.remainingButtonClicked = true;
             const btn = e.target as HTMLButtonElement;
-            btn.style.color = "green";;
+            btn;
+            //.style.color = "#f4f4f4";
           }}
         >
           mehr anzeigen
@@ -64,8 +65,8 @@ export class TextComponent {
             onClick={e => {
               this.remainingButtonClicked = false;
               const btn2 = e.target as HTMLButtonElement;
-              btn2.style.color = "red"; 
-              //this.removeRemainingProducts();
+              btn2
+              //.style.color = "red";
             }}
           >
             weniger anzeigen
@@ -73,16 +74,15 @@ export class TextComponent {
           );
     return jsxContent;
   }
-
-//{this.remainingButtonClicked ? '' : this.removeRemainingProducts()}
+  
   render() {
     
     return (
       <Host>
-    <div class="right">
+        <div>
         <div class="text-component">
           <h2 id="text-component-headline">{this.slHeroHeadline.toUpperCase()}</h2>
-          <p>Hier könnten wir noch iwelche Daten reinschreiben. Und hier oben ein kleiner Text um sich zu beschreiben! #Headline.</p>
+          <p>Das Tesla Model X jetzt nicht im Angebot. Schlag Sie jetzt zu bei unfassbar normalen Preisen! #Headline.</p>
         </div>
         <ul>
         {this.getProductsContent()}

@@ -1,0 +1,57 @@
+* {
+  font-family: 'Montsserat', sans-serif;
+  color: white;
+}
+:host {
+  display: block;
+}
+#header {
+  opacity: 0.6;
+  transition: 0.3s;
+  background-color: #1f283354;
+  padding-top: 10px;
+  justify-content: center;
+  min-height: 80px;
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2 {
+  color: #45a29e;
+}
+h2 {
+  font-size: medium;
+  font-style: normal;
+}
+
+.logoTesla {
+  padding-left: 180px;
+  width: 100px;
+  height: 100px;
+}
+table {
+  padding: 20px;
+  padding-top: 40px;
+  margin-right: 50px;
+  float: right;
+}
+.sitelinks {
+  color: white !important;
+  font-style: normal !important;
+  font-size: medium !important;
+  align-content: center;
+  padding: 30px;
+  text-decoration: none;
+}
+.sitelinks:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: #1f2833 !important;
+  text-shadow: 0px 0px 5px white;
+  font-weight: bold;
+}
+
+#header:hover {
+  opacity: 1;
+  background-color: #1f2833;
+}

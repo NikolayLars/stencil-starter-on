@@ -27,6 +27,15 @@ export namespace Components {
         "carnametwo": string;
         "plz": string;
     }
+    interface HeaderComponent {
+        "contact": string;
+        "contacturl": string;
+        "home": string;
+        "homeurl": string;
+        "shop": string;
+        "shopurl": string;
+        "teslaLogo": string;
+    }
     interface HeaderLn {
     }
     interface InfoRaster {
@@ -80,8 +89,6 @@ export namespace Components {
         "urlthree": string;
         "urltwo": string;
     }
-    interface SlideComponent {
-    }
     interface TextComponent {
         "position": string;
         "slHeroHeadline": string;
@@ -116,6 +123,12 @@ declare global {
     var HTMLFlipCardElement: {
         prototype: HTMLFlipCardElement;
         new (): HTMLFlipCardElement;
+    };
+    interface HTMLHeaderComponentElement extends Components.HeaderComponent, HTMLStencilElement {
+    }
+    var HTMLHeaderComponentElement: {
+        prototype: HTMLHeaderComponentElement;
+        new (): HTMLHeaderComponentElement;
     };
     interface HTMLHeaderLnElement extends Components.HeaderLn, HTMLStencilElement {
     }
@@ -153,12 +166,6 @@ declare global {
         prototype: HTMLMorizComponentElement;
         new (): HTMLMorizComponentElement;
     };
-    interface HTMLSlideComponentElement extends Components.SlideComponent, HTMLStencilElement {
-    }
-    var HTMLSlideComponentElement: {
-        prototype: HTMLSlideComponentElement;
-        new (): HTMLSlideComponentElement;
-    };
     interface HTMLTextComponentElement extends Components.TextComponent, HTMLStencilElement {
     }
     var HTMLTextComponentElement: {
@@ -182,13 +189,13 @@ declare global {
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
         "cookie-component": HTMLCookieComponentElement;
         "flip-card": HTMLFlipCardElement;
+        "header-component": HTMLHeaderComponentElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
         "map-component": HTMLMapComponentElement;
         "melly-component": HTMLMellyComponentElement;
         "menu-component": HTMLMenuComponentElement;
         "moriz-component": HTMLMorizComponentElement;
-        "slide-component": HTMLSlideComponentElement;
         "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
         "weather-ln": HTMLWeatherLnElement;
@@ -215,6 +222,15 @@ declare namespace LocalJSX {
         "carnamethree"?: string;
         "carnametwo"?: string;
         "plz"?: string;
+    }
+    interface HeaderComponent {
+        "contact"?: string;
+        "contacturl"?: string;
+        "home"?: string;
+        "homeurl"?: string;
+        "shop"?: string;
+        "shopurl"?: string;
+        "teslaLogo"?: string;
     }
     interface HeaderLn {
     }
@@ -269,8 +285,6 @@ declare namespace LocalJSX {
         "urlthree"?: string;
         "urltwo"?: string;
     }
-    interface SlideComponent {
-    }
     interface TextComponent {
         "position"?: string;
         "slHeroHeadline"?: string;
@@ -285,13 +299,13 @@ declare namespace LocalJSX {
         "anmeldeformular-component": AnmeldeformularComponent;
         "cookie-component": CookieComponent;
         "flip-card": FlipCard;
+        "header-component": HeaderComponent;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
         "map-component": MapComponent;
         "melly-component": MellyComponent;
         "menu-component": MenuComponent;
         "moriz-component": MorizComponent;
-        "slide-component": SlideComponent;
         "text-component": TextComponent;
         "user-card": UserCard;
         "weather-ln": WeatherLn;
@@ -305,13 +319,13 @@ declare module "@stencil/core" {
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
             "cookie-component": LocalJSX.CookieComponent & JSXBase.HTMLAttributes<HTMLCookieComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
+            "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
-            "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
             "weather-ln": LocalJSX.WeatherLn & JSXBase.HTMLAttributes<HTMLWeatherLnElement>;

@@ -9,9 +9,17 @@
     <title>Tesla Kaufen.de</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
   </head>
-
+  <header>
+    <header-component
+      home="Home"
+      homeurl="https://www.tesla.com/de_de"
+      contact="Contact"
+      contacturl="https://www.tesla.com/de_DE/contact"
+      shop="Shop"
+      shopurl="https://shop.tesla.com/de_de?tesref=true"
+    ></header-component>
+  </header>
   <body>
-    <h1>Welcome to out Page</h1>
     <header-ln></header-ln>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -51,7 +59,7 @@
     <menu-component label="Teslareihe" label2="Farbe">
     </menu-component>
 
-    <text-component sl-hero-headline="jetzt nicht im Angebot!" position="right">
+    <text-component sl-hero-headline="jetzt nicht im Angebot! &nbsp; " position="right">
       <div slot="text-component-product">
         <p>Tesla Model S</p>
       </div>
@@ -80,14 +88,14 @@
 
     <div>
       <user-card>
-        <div id="item1" slot="name" >Name: Peter Maximilian Lustig </div>
-        <div id="item2" slot="email">Email: peter.lustig@gmx.net </div>
-        <div id="item3" slot="telefon">Tel.: 0175 1213132 </div>
+        <div id="item1" slot="name">Name: Peter Maximilian Lustig</div>
+        <div id="item2" slot="email">Email: peter.lustig@gmx.net</div>
+        <div id="item3" slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
       <user-card>
-        <div slot="name" >Name: Joana Maria Schwamm </div>
-        <div slot="email">Email: joana.schwamm@net.de </div>
-        <div slot="telefon">Tel.: 0175 1213132 </div>
+        <div slot="name">Name: Joana Maria Schwamm</div>
+        <div slot="email">Email: joana.schwamm@net.de</div>
+        <div slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
     </div>
 
@@ -96,9 +104,9 @@
 
     <melly-component></melly-component>
     <user-card>
-      <div slot="name">Name: Heiner Christian Kranz </div>
-      <div slot="email">Email: heiner.kranz@web.us </div>
-      <div slot="telefon">Tel.: 0175 1213132 </div>
+      <div slot="name">Name: Heiner Christian Kranz</div>
+      <div slot="email">Email: heiner.kranz@web.us</div>
+      <div slot="telefon">Tel.: 0175 1213132</div>
     </user-card>
     <flip-card carnameone="Model 3" cardescriptionone="Blue" carnametwo="Model 3" cardescriptiontwo="White" carnamethree="Model 3" carDescriptionthree="Grey"> </flip-card>
     <info-raster infotitlerechts="TESLA3" infotitlelinks="TESLAS" infdescriptionlinks="TESLA ist super cool" infdescriptionrechts="TESLA ist super cool- wirklich!!!"></info-raster>
@@ -110,11 +118,11 @@
       city="mustercity"
       plz="882211"
       siteone="Unternehmen"
-      urlone="https://www.amazon.de"
+      urlone="https://www.tesla.com/de_de"
       sitetwo="Karriere"
-      urltwo="https://www.amazon.jobs/de"
+      urltwo="https://www.tesla.com/de_DE/careers"
       sitethree="Kontakt"
-      urlthree="https://www.amazon.de/gp/aw/contact-us"
+      urlthree="https://www.tesla.com/de_DE/contact"
     ></moriz-component>
   </footer>
 </html>
