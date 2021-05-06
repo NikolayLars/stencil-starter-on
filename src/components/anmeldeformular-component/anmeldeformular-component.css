@@ -126,6 +126,13 @@
   padding: 5px;
   margin: 10px;
 }
+.empty {
+  border-color: red;
+}
+.notice {
+  color: red;
+}
+
 .inputContainer {
   display:block;
   position: relative;

@@ -50,12 +50,12 @@ export namespace Components {
         "img5": string;
     }
     interface MenuComponent {
-        "option1": string;
-        "option2": string;
-        "option3": string;
-        "option4": string;
-        "option5": string;
-        "zeugs": string;
+        "label": string;
+        "label2": string;
+        "label3": string;
+        "option1": HTMLElement;
+        "option2": HTMLElement;
+        "option3": HTMLElement;
     }
     interface MorizComponent {
         "city": string;
@@ -239,12 +239,12 @@ declare namespace LocalJSX {
         "img5"?: string;
     }
     interface MenuComponent {
-        "option1"?: string;
-        "option2"?: string;
-        "option3"?: string;
-        "option4"?: string;
-        "option5"?: string;
-        "zeugs"?: string;
+        "label"?: string;
+        "label2"?: string;
+        "label3"?: string;
+        "option1"?: HTMLElement;
+        "option2"?: HTMLElement;
+        "option3"?: HTMLElement;
     }
     interface MorizComponent {
         "city"?: string;
