@@ -2,11 +2,11 @@ import { Component, Host, h , Prop , Element, State} from '@stencil/core';
 
 
 @Component({
-  tag: 'jona-component',
-  styleUrl: 'jona-component.css',
+  tag: 'text-component',
+  styleUrl: 'text-component.css',
   shadow: true,
 })
-export class JonaComponent {
+export class TextComponent {
   @Prop({ reflect: true, mutable: true }) slHeroHeadline: string;
   @Element() el: HTMLElement;
   @State() remainingButtonClicked: boolean = false;
@@ -21,7 +21,7 @@ export class JonaComponent {
 
   getProducts() {
     const products = [];
-    const productsSlot = this.el.querySelectorAll('[slot="jona-component-product"]');
+    const productsSlot = this.el.querySelectorAll('[slot="text-component-product"]');
     if (productsSlot) {
       productsSlot.forEach(product => products.push(product.innerHTML));
     }
@@ -80,14 +80,14 @@ export class JonaComponent {
     return (
       <Host>
     <div class="right">
-        <div class="jona-component">
-          <h2 id="jona-component-headline">{this.slHeroHeadline.toUpperCase()}</h2>
+        <div class="text-component">
+          <h2 id="text-component-headline">{this.slHeroHeadline.toUpperCase()}</h2>
           <p>Hier könnten wir noch iwelche Daten reinschreiben. Und hier oben ein kleiner Text um sich zu beschreiben! #Headline.</p>
         </div>
         <ul>
         {this.getProductsContent()}
         </ul>
-        <div id="jona-component-products">
+        <div id="text-component-products">
           <ul>
             {this.remainingButtonClicked ? this.addRemainingProducts() : ''}
           </ul>

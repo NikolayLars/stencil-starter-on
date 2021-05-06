@@ -33,10 +33,6 @@ export namespace Components {
         "infotitlelinks": string;
         "infotitlerechts": string;
     }
-    interface JonaComponent {
-        "position": string;
-        "slHeroHeadline": string;
-    }
     interface JuliaComponent {
         "titel": string;
     }
@@ -80,6 +76,10 @@ export namespace Components {
     }
     interface SlideComponent {
     }
+    interface TextComponent {
+        "position": string;
+        "slHeroHeadline": string;
+    }
     interface UserCard {
         "picture1": string;
     }
@@ -117,12 +117,6 @@ declare global {
         prototype: HTMLInfoRasterElement;
         new (): HTMLInfoRasterElement;
     };
-    interface HTMLJonaComponentElement extends Components.JonaComponent, HTMLStencilElement {
-    }
-    var HTMLJonaComponentElement: {
-        prototype: HTMLJonaComponentElement;
-        new (): HTMLJonaComponentElement;
-    };
     interface HTMLJuliaComponentElement extends Components.JuliaComponent, HTMLStencilElement {
     }
     var HTMLJuliaComponentElement: {
@@ -159,6 +153,12 @@ declare global {
         prototype: HTMLSlideComponentElement;
         new (): HTMLSlideComponentElement;
     };
+    interface HTMLTextComponentElement extends Components.TextComponent, HTMLStencilElement {
+    }
+    var HTMLTextComponentElement: {
+        prototype: HTMLTextComponentElement;
+        new (): HTMLTextComponentElement;
+    };
     interface HTMLUserCardElement extends Components.UserCard, HTMLStencilElement {
     }
     var HTMLUserCardElement: {
@@ -177,13 +177,13 @@ declare global {
         "flip-card": HTMLFlipCardElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
-        "jona-component": HTMLJonaComponentElement;
         "julia-component": HTMLJuliaComponentElement;
         "map-component": HTMLMapComponentElement;
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
         "moriz-compronent2": HTMLMorizCompronent2Element;
         "slide-component": HTMLSlideComponentElement;
+        "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
         "weather-ln": HTMLWeatherLnElement;
     }
@@ -215,10 +215,6 @@ declare namespace LocalJSX {
         "infdescriptionrechts"?: string;
         "infotitlelinks"?: string;
         "infotitlerechts"?: string;
-    }
-    interface JonaComponent {
-        "position"?: string;
-        "slHeroHeadline"?: string;
     }
     interface JuliaComponent {
         "titel"?: string;
@@ -263,6 +259,10 @@ declare namespace LocalJSX {
     }
     interface SlideComponent {
     }
+    interface TextComponent {
+        "position"?: string;
+        "slHeroHeadline"?: string;
+    }
     interface UserCard {
         "picture1"?: string;
     }
@@ -274,13 +274,13 @@ declare namespace LocalJSX {
         "flip-card": FlipCard;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
-        "jona-component": JonaComponent;
         "julia-component": JuliaComponent;
         "map-component": MapComponent;
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
         "moriz-compronent2": MorizCompronent2;
         "slide-component": SlideComponent;
+        "text-component": TextComponent;
         "user-card": UserCard;
         "weather-ln": WeatherLn;
     }
@@ -294,13 +294,13 @@ declare module "@stencil/core" {
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
-            "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
             "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
             "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
             "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
+            "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
             "weather-ln": LocalJSX.WeatherLn & JSXBase.HTMLAttributes<HTMLWeatherLnElement>;
         }

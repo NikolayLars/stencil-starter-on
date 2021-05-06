@@ -5,17 +5,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component, Host, h } from '@stencil/core';
-let JonaComponent = class JonaComponent {
+let TextComponent = class TextComponent {
     render() {
         return (h(Host, null,
             h("slot", null)));
     }
 };
-JonaComponent = __decorate([
+TextComponent = __decorate([
     Component({
-        tag: 'jona-component',
-        styleUrl: 'jona-component.css',
+        tag: 'text-component',
+        styleUrl: 'text-component.css',
         shadow: true,
     })
-], JonaComponent);
-export { JonaComponent };
+], TextComponent);
+export { TextComponent };

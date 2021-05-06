@@ -11,7 +11,7 @@
   background: #1f2833;
   width: 500px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 2fr;
   grid-gap: 10px;
   margin-bottom: 15px;
   border-bottom: #45a29e 5px solid;
@@ -19,12 +19,22 @@
   padding: 20px;
   position: relative;
   left: -450px;
+  /*grid-template-rows: 1fr 1fr 1fr;*/ 
 }
 .user-card:hover {
   transform: translateX(+500px);
   transition: transform 1s ease-in-out;
 }
-
+/*
+#item1 {
+  vertical-align: top;
+}
+#item2 {
+  vertical-align: top;
+}
+#item3 {
+  vertical-align: top;
+}*/ 
 #bild {
   position: absolute;
   padding: 5px;
@@ -32,8 +42,4 @@
   max-height: 40px;
   margin-left: 470px;
   margin-top: 15px;
-}
-
-.grid{
-  display: grid;
 }
