@@ -1,4 +1,4 @@
-# julia-component
+# cookie-component
 
 
 

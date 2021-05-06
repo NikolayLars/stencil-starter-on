@@ -1,12 +1,12 @@
 import { Component, Host, h, Prop,} from '@stencil/core';
 
 @Component({
-  tag: 'julia-component',
-  styleUrl: 'julia-component.css',
+  tag: 'cookie-component',
+  styleUrl: 'cookie-component.css',
   shadow: true,
 })
 
-export class JuliaComponent {
+export class CookieComponent {
 
   @Prop() titel :string;
   overlay: HTMLElement;

@@ -11,6 +11,9 @@ export namespace Components {
     interface AnmeldeformularComponent {
         "titel": string;
     }
+    interface CookieComponent {
+        "titel": string;
+    }
     interface FlipCard {
         "Picture1": string;
         "Picture2": string;
@@ -36,9 +39,6 @@ export namespace Components {
     interface JonaComponent {
         "position": string;
         "slHeroHeadline": string;
-    }
-    interface JuliaComponent {
-        "titel": string;
     }
     interface MapComponent {
         "adress": string;
@@ -99,6 +99,12 @@ declare global {
         prototype: HTMLAnmeldeformularComponentElement;
         new (): HTMLAnmeldeformularComponentElement;
     };
+    interface HTMLCookieComponentElement extends Components.CookieComponent, HTMLStencilElement {
+    }
+    var HTMLCookieComponentElement: {
+        prototype: HTMLCookieComponentElement;
+        new (): HTMLCookieComponentElement;
+    };
     interface HTMLFlipCardElement extends Components.FlipCard, HTMLStencilElement {
     }
     var HTMLFlipCardElement: {
@@ -122,12 +128,6 @@ declare global {
     var HTMLJonaComponentElement: {
         prototype: HTMLJonaComponentElement;
         new (): HTMLJonaComponentElement;
-    };
-    interface HTMLJuliaComponentElement extends Components.JuliaComponent, HTMLStencilElement {
-    }
-    var HTMLJuliaComponentElement: {
-        prototype: HTMLJuliaComponentElement;
-        new (): HTMLJuliaComponentElement;
     };
     interface HTMLMapComponentElement extends Components.MapComponent, HTMLStencilElement {
     }
@@ -174,11 +174,11 @@ declare global {
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
+        "cookie-component": HTMLCookieComponentElement;
         "flip-card": HTMLFlipCardElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
         "jona-component": HTMLJonaComponentElement;
-        "julia-component": HTMLJuliaComponentElement;
         "map-component": HTMLMapComponentElement;
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
@@ -192,6 +192,9 @@ declare namespace LocalJSX {
     interface AdrianComponent {
     }
     interface AnmeldeformularComponent {
+        "titel"?: string;
+    }
+    interface CookieComponent {
         "titel"?: string;
     }
     interface FlipCard {
@@ -219,9 +222,6 @@ declare namespace LocalJSX {
     interface JonaComponent {
         "position"?: string;
         "slHeroHeadline"?: string;
-    }
-    interface JuliaComponent {
-        "titel"?: string;
     }
     interface MapComponent {
         "adress"?: string;
@@ -271,11 +271,11 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "anmeldeformular-component": AnmeldeformularComponent;
+        "cookie-component": CookieComponent;
         "flip-card": FlipCard;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
         "jona-component": JonaComponent;
-        "julia-component": JuliaComponent;
         "map-component": MapComponent;
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
@@ -291,11 +291,11 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
+            "cookie-component": LocalJSX.CookieComponent & JSXBase.HTMLAttributes<HTMLCookieComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "jona-component": LocalJSX.JonaComponent & JSXBase.HTMLAttributes<HTMLJonaComponentElement>;
-            "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
