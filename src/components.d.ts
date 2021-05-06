@@ -89,8 +89,6 @@ export namespace Components {
         "urlthree": string;
         "urltwo": string;
     }
-    interface SlideComponent {
-    }
     interface TextComponent {
         "position": string;
         "slHeroHeadline": string;
@@ -168,12 +166,6 @@ declare global {
         prototype: HTMLMorizComponentElement;
         new (): HTMLMorizComponentElement;
     };
-    interface HTMLSlideComponentElement extends Components.SlideComponent, HTMLStencilElement {
-    }
-    var HTMLSlideComponentElement: {
-        prototype: HTMLSlideComponentElement;
-        new (): HTMLSlideComponentElement;
-    };
     interface HTMLTextComponentElement extends Components.TextComponent, HTMLStencilElement {
     }
     var HTMLTextComponentElement: {
@@ -204,7 +196,6 @@ declare global {
         "melly-component": HTMLMellyComponentElement;
         "menu-component": HTMLMenuComponentElement;
         "moriz-component": HTMLMorizComponentElement;
-        "slide-component": HTMLSlideComponentElement;
         "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
         "weather-ln": HTMLWeatherLnElement;
@@ -294,8 +285,6 @@ declare namespace LocalJSX {
         "urlthree"?: string;
         "urltwo"?: string;
     }
-    interface SlideComponent {
-    }
     interface TextComponent {
         "position"?: string;
         "slHeroHeadline"?: string;
@@ -317,7 +306,6 @@ declare namespace LocalJSX {
         "melly-component": MellyComponent;
         "menu-component": MenuComponent;
         "moriz-component": MorizComponent;
-        "slide-component": SlideComponent;
         "text-component": TextComponent;
         "user-card": UserCard;
         "weather-ln": WeatherLn;
@@ -338,7 +326,6 @@ declare module "@stencil/core" {
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
-            "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
             "weather-ln": LocalJSX.WeatherLn & JSXBase.HTMLAttributes<HTMLWeatherLnElement>;

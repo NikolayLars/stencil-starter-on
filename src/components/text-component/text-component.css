@@ -3,10 +3,6 @@
   background: #1f2833;
   margin-bottom: 10px;
   border-radius: 5px;
-  width: 50%;
-}
-.right {
-  right: 0;
 }
 
 .text-component {
@@ -29,9 +25,29 @@
   border: 0;
   border-radius: 5px;
   padding: 5px 10px;
+  width: 120px; 
 }
 
 #addProductsButton:hover {
+  cursor: pointer;
+  background:  #f4f4f4;
+  color: #45a29e;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+#closingButton{
+  cursor: pointer;
+  background:  #45a29e;
+  color: #f4f4f4;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 120px;
+}
+
+#closingButton:hover {
   cursor: pointer;
   background:  #f4f4f4;
   color: #45a29e;
