@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdrianComponent {
+        "textblockInhalt": string;
     }
     interface AnmeldeformularComponent {
         "titel": string;
@@ -190,6 +191,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AdrianComponent {
+        "textblockInhalt"?: string;
     }
     interface AnmeldeformularComponent {
         "titel"?: string;

@@ -1,3 +1,64 @@
 :host {
   display: block;
 }
+
+#infoIcon {
+height: 30px;
+width: 30px;
+position: absolute;
+border-radius: 50%;
+display: inline-block;
+background-color: rgb(200, 200, 200);
+cursor: pointer;
+-moz-box-shadow: 0 0 5px #fff;
+-webkit-box-shadow: 0 0 5px #fff;
+box-shadow: 0px 0px 5px #fff;
+z-index: 3000;
+top: 20%;
+}
+
+#infoIcon:hover {
+
+background-color: rgb(240, 240, 240);
+-moz-box-shadow: 0 0 10px #fff;
+-webkit-box-shadow: 0 0 10px #fff;
+box-shadow: 0px 0px 10px #fff;
+transition: ease-in;
+transition-delay: 50ms;
+}
+
+
+
+#textblock {
+overflow-y: hidden;
+position: absolute;
+height: 0px;
+color: white;
+background-color: #1F2833;
+width: 250px;
+text-align: left;
+-moz-box-shadow: 0 0 10px #fff;
+-webkit-box-shadow: 0 0 10px #fff;
+box-shadow: 0px 0px 10px #fff;
+box-sizing: border-box;
+border-radius: 10px;
+transition: ease-in;
+transition-delay: 50ms;
+z-index: 2000;
+}
+
+#text {
+  margin-left: 30px;
+}
+
+.position {
+  position: relative;
+}
+/*
+.position {
+  background-image: url(../src/components/moriz-component/assets/TeslaLadesation.jpeg);
+  z-index: 2000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
