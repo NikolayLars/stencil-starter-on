@@ -7,8 +7,12 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AdrianComponent {
+        "textblockInhalt": string;
     }
     interface AnmeldeformularComponent {
+        "titel": string;
+    }
+    interface CookieComponent {
         "titel": string;
     }
     interface FlipCard {
@@ -32,9 +36,6 @@ export namespace Components {
         "infdescriptionrechts": string;
         "infotitlelinks": string;
         "infotitlerechts": string;
-    }
-    interface JuliaComponent {
-        "titel": string;
     }
     interface MapComponent {
         "adress": string;
@@ -71,9 +72,6 @@ export namespace Components {
         "urlthree": string;
         "urltwo": string;
     }
-    interface MorizCompronent2 {
-        "street": string;
-    }
     interface SlideComponent {
     }
     interface TextComponent {
@@ -99,6 +97,12 @@ declare global {
         prototype: HTMLAnmeldeformularComponentElement;
         new (): HTMLAnmeldeformularComponentElement;
     };
+    interface HTMLCookieComponentElement extends Components.CookieComponent, HTMLStencilElement {
+    }
+    var HTMLCookieComponentElement: {
+        prototype: HTMLCookieComponentElement;
+        new (): HTMLCookieComponentElement;
+    };
     interface HTMLFlipCardElement extends Components.FlipCard, HTMLStencilElement {
     }
     var HTMLFlipCardElement: {
@@ -117,12 +121,6 @@ declare global {
         prototype: HTMLInfoRasterElement;
         new (): HTMLInfoRasterElement;
     };
-    interface HTMLJuliaComponentElement extends Components.JuliaComponent, HTMLStencilElement {
-    }
-    var HTMLJuliaComponentElement: {
-        prototype: HTMLJuliaComponentElement;
-        new (): HTMLJuliaComponentElement;
-    };
     interface HTMLMapComponentElement extends Components.MapComponent, HTMLStencilElement {
     }
     var HTMLMapComponentElement: {
@@ -140,12 +138,6 @@ declare global {
     var HTMLMorizComponentElement: {
         prototype: HTMLMorizComponentElement;
         new (): HTMLMorizComponentElement;
-    };
-    interface HTMLMorizCompronent2Element extends Components.MorizCompronent2, HTMLStencilElement {
-    }
-    var HTMLMorizCompronent2Element: {
-        prototype: HTMLMorizCompronent2Element;
-        new (): HTMLMorizCompronent2Element;
     };
     interface HTMLSlideComponentElement extends Components.SlideComponent, HTMLStencilElement {
     }
@@ -174,14 +166,13 @@ declare global {
     interface HTMLElementTagNameMap {
         "adrian-component": HTMLAdrianComponentElement;
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
+        "cookie-component": HTMLCookieComponentElement;
         "flip-card": HTMLFlipCardElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
-        "julia-component": HTMLJuliaComponentElement;
         "map-component": HTMLMapComponentElement;
         "melly-component": HTMLMellyComponentElement;
         "moriz-component": HTMLMorizComponentElement;
-        "moriz-compronent2": HTMLMorizCompronent2Element;
         "slide-component": HTMLSlideComponentElement;
         "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
@@ -190,8 +181,12 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AdrianComponent {
+        "textblockInhalt"?: string;
     }
     interface AnmeldeformularComponent {
+        "titel"?: string;
+    }
+    interface CookieComponent {
         "titel"?: string;
     }
     interface FlipCard {
@@ -215,9 +210,6 @@ declare namespace LocalJSX {
         "infdescriptionrechts"?: string;
         "infotitlelinks"?: string;
         "infotitlerechts"?: string;
-    }
-    interface JuliaComponent {
-        "titel"?: string;
     }
     interface MapComponent {
         "adress"?: string;
@@ -254,9 +246,6 @@ declare namespace LocalJSX {
         "urlthree"?: string;
         "urltwo"?: string;
     }
-    interface MorizCompronent2 {
-        "street"?: string;
-    }
     interface SlideComponent {
     }
     interface TextComponent {
@@ -271,14 +260,13 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "adrian-component": AdrianComponent;
         "anmeldeformular-component": AnmeldeformularComponent;
+        "cookie-component": CookieComponent;
         "flip-card": FlipCard;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
-        "julia-component": JuliaComponent;
         "map-component": MapComponent;
         "melly-component": MellyComponent;
         "moriz-component": MorizComponent;
-        "moriz-compronent2": MorizCompronent2;
         "slide-component": SlideComponent;
         "text-component": TextComponent;
         "user-card": UserCard;
@@ -291,14 +279,13 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "adrian-component": LocalJSX.AdrianComponent & JSXBase.HTMLAttributes<HTMLAdrianComponentElement>;
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
+            "cookie-component": LocalJSX.CookieComponent & JSXBase.HTMLAttributes<HTMLCookieComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
-            "julia-component": LocalJSX.JuliaComponent & JSXBase.HTMLAttributes<HTMLJuliaComponentElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
-            "moriz-compronent2": LocalJSX.MorizCompronent2 & JSXBase.HTMLAttributes<HTMLMorizCompronent2Element>;
             "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
