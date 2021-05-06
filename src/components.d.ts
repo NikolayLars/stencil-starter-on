@@ -58,6 +58,14 @@ export namespace Components {
         "img4": string;
         "img5": string;
     }
+    interface MenuComponent {
+        "option1": string;
+        "option2": string;
+        "option3": string;
+        "option4": string;
+        "option5": string;
+        "zeugs": string;
+    }
     interface MorizComponent {
         "city": string;
         "imageFacebook": string;
@@ -148,6 +156,12 @@ declare global {
         prototype: HTMLMellyComponentElement;
         new (): HTMLMellyComponentElement;
     };
+    interface HTMLMenuComponentElement extends Components.MenuComponent, HTMLStencilElement {
+    }
+    var HTMLMenuComponentElement: {
+        prototype: HTMLMenuComponentElement;
+        new (): HTMLMenuComponentElement;
+    };
     interface HTMLMorizComponentElement extends Components.MorizComponent, HTMLStencilElement {
     }
     var HTMLMorizComponentElement: {
@@ -188,6 +202,7 @@ declare global {
         "info-raster": HTMLInfoRasterElement;
         "map-component": HTMLMapComponentElement;
         "melly-component": HTMLMellyComponentElement;
+        "menu-component": HTMLMenuComponentElement;
         "moriz-component": HTMLMorizComponentElement;
         "slide-component": HTMLSlideComponentElement;
         "text-component": HTMLTextComponentElement;
@@ -248,6 +263,14 @@ declare namespace LocalJSX {
         "img4"?: string;
         "img5"?: string;
     }
+    interface MenuComponent {
+        "option1"?: string;
+        "option2"?: string;
+        "option3"?: string;
+        "option4"?: string;
+        "option5"?: string;
+        "zeugs"?: string;
+    }
     interface MorizComponent {
         "city"?: string;
         "imageFacebook"?: string;
@@ -292,6 +315,7 @@ declare namespace LocalJSX {
         "info-raster": InfoRaster;
         "map-component": MapComponent;
         "melly-component": MellyComponent;
+        "menu-component": MenuComponent;
         "moriz-component": MorizComponent;
         "slide-component": SlideComponent;
         "text-component": TextComponent;
@@ -312,6 +336,7 @@ declare module "@stencil/core" {
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
+            "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
             "slide-component": LocalJSX.SlideComponent & JSXBase.HTMLAttributes<HTMLSlideComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;

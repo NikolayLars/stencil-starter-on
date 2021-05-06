@@ -6,18 +6,17 @@
   height: 600px;
   
 }
-
-li{
-  
-  list-style-type: none;
-  float: left;
-  margin: 50px;
-
+@media only screen and (max-width: 1900px) {
+  #flip-component{
+  width: 1900px;
+  }
 }
+
 .flip-card {
-  
+  float: left;
   width: 400px;
   perspective: 1000px;
+  margin: 6%;
 }
 
 #teslaPicture{
