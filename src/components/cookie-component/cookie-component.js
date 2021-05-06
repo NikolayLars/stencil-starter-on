@@ -5,17 +5,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component, Host, h } from '@stencil/core';
-let JuliaComponent = class JuliaComponent {
+let CookieComponent = class CookieComponent {
     render() {
         return (h(Host, null,
             h("slot", null)));
     }
 };
-JuliaComponent = __decorate([
+CookieComponent = __decorate([
     Component({
-        tag: 'julia-component',
-        styleUrl: 'julia-component.css',
+        tag: 'cookie-component',
+        styleUrl: 'cookie-component.css',
         shadow: true,
     })
-], JuliaComponent);
-export { JuliaComponent };
+], CookieComponent);
+export { CookieComponent };
