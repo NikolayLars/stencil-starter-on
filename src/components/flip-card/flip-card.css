@@ -6,11 +6,6 @@
   height: 600px;
   
 }
-@media only screen and (max-width: 1900px) {
-  #flip-component{
-  width: 1900px;
-  }
-}
 
 .flip-card {
   float: left;

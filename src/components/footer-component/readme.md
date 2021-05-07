@@ -22,7 +22,6 @@
 | `imageYouTube`    | `image-you-tube`   |             | `string` | `'YouTube.png'`                                  |
 | `plz`             | `plz`              |             | `string` | `undefined`                                      |
 | `siteone`         | `siteone`          |             | `string` | `undefined`                                      |
-| `sites`           | `sites`            |             | `string` | `undefined`                                      |
 | `sitethree`       | `sitethree`        |             | `string` | `undefined`                                      |
 | `sitetwo`         | `sitetwo`          |             | `string` | `undefined`                                      |
 | `socialMedia`     | `social-media`     |             | `any`    | `undefined`                                      |

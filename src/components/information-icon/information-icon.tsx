@@ -2,7 +2,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'information-icon',
-  styleUrl: 'information-icon.css',
+  styleUrl: 'information-icon.css', 
 })
 export class informationIconComponent {
 
@@ -23,7 +23,6 @@ export class informationIconComponent {
       <Host>
         <slot>
         <div class="position">
-        <img src="../src/components/moriz-component/assets/TeslaLadesation.jpeg"></img>
           <div id="infoIcon" onMouseEnter = {showTextblock} onMouseLeave = {hideTextblock}>
           
           <div id="textblock">
