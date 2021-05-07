@@ -16,6 +16,7 @@ export class SlideComponent {
     const email = this.el.querySelectorAll('[slot="email"]');
     const name = this.el.querySelectorAll('[slot="name"');
     const telefon = this.el.querySelectorAll('[slot="telefon"');
+    const text = this.el.querySelectorAll('[slot="text"');
     if (email) {
       email.forEach(userCard => userCards.push(userCard.innerHTML));
     }
@@ -24,6 +25,9 @@ export class SlideComponent {
     }
     if (telefon){
       telefon.forEach(userCard => userCards.push(userCard.innerHTML));
+    }
+    if (text){
+      text.forEach(userCard => userCards.push(userCard.innerHTML));
     }
     return userCards;
   }
