@@ -26,7 +26,7 @@ export class informationIconComponent {
           <div id="infoIcon" onMouseEnter = {showTextblock} onMouseLeave = {hideTextblock}>
           
           <div id="textblock">
-          <p>Das ist der Motor.</p>
+          <p>Tesla Schnellladestation</p>
           </div>
           </div>
         </div>

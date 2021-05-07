@@ -8,56 +8,51 @@ background-image: url("../src/components/footer-component/assets/TeslaLadesation
 background-repeat: no-repeat;
 background-size: contain;
 height: 900px;
+position: relative;
 }
 
 #infoIcon {
-height: 30px;
-width: 30px;
+height: 40px;
+width: 40px;
 position: absolute;
 border-radius: 50%;
 display: inline-block;
 background-color: rgb(241, 241, 241);
 cursor: pointer;
--moz-box-shadow: 0 0 5px #fff;
--webkit-box-shadow: 0 0 5px #fff;
-box-shadow: 0px 0px 5px #fff;
+-moz-box-shadow: 0 0 10px #fff;
+-webkit-box-shadow: 0 0 10px #fff;
+box-shadow: 0px 0px 10px #fff;
 z-index: 3000;
-top: 39%;
-left: 26%
+margin-left: 26.7%;
+margin-top: 23.2%
 }
 
 #infoIcon:hover {
 
 background-color: rgb(255, 255, 255);
--moz-box-shadow: 0 0 10px #fff;
--webkit-box-shadow: 0 0 10px #fff;
-box-shadow: 0px 0px 10px #fff;
-transition: ease-in;
-transition-delay: 50ms;
+-moz-box-shadow: 0 0 15px #fff;
+-webkit-box-shadow: 0 0 15px #fff;
+box-shadow: 0px 0px 15px #fff;
 }
 
 
 
 #textblock {
 overflow-y: hidden;
-position: absolute;
 height: 0px;
 color: white;
 background-color: #1F2833;
-width: 250px;
+width: 200px;
 text-align: left;
 -moz-box-shadow: 0 0 10px #fff;
 -webkit-box-shadow: 0 0 10px #fff;
 box-shadow: 0px 0px 10px #fff;
 box-sizing: border-box;
 border-radius: 10px;
-transition: ease-in;
-transition-delay: 50ms;
 z-index: 2000;
+margin-left: 40px;
+padding-left: 10px;
+
 }
 
 
-
-.position {
-  position: relative;
-}
