@@ -10,8 +10,8 @@ export class AnmeldeformularComponent {
   @Prop() titel :string;
   overlay: HTMLElement;
   modal: HTMLElement;
-  checkbox1: HTMLElement;
-  checkbox2: HTMLElement;
+  checkbox1: HTMLInputElement;
+  checkbox2: HTMLInputElement;
   firstName: HTMLInputElement;
   lastName: HTMLInputElement;
   email: HTMLInputElement;
@@ -23,16 +23,18 @@ openAnmeldung(){
 }
 
 checkInput(){
-  if(this.firstName.value == '' || this.lastName.value == '' || this.email.value == ''){
+  if(this.firstName.value == '' || this.lastName.value == '' || this.email.value == '' || this.checkbox1.checked == false){
     this.firstName.classList.add('empty');
     this.lastName.classList.add('empty');
     this.email.classList.add('empty');
+    this.checkbox1.classList.add('emptyCheckbox');
     this.notice.innerHTML = "Bitte alle Pflichtfelder ausfüllen.";
-
-  } else {
+  } 
+  else {
     this.firstName.classList.remove('empty');
     this.lastName.classList.remove('empty');
     this.email.classList.remove('empty');
+    this.checkbox1.classList.remove('emptyCheckbox');
     this.notice.innerHTML = '';
     this.closeAnmeldung();
   }
@@ -81,11 +83,11 @@ closeAnmeldung(){
                         <td><input type="email" name="email" id="email" class="inputBox" ref={(el) => this.email = el as HTMLInputElement}/></td>
                       </tr>
                       <tr>
-                        <td class="checkboxTD"><input type="checkbox" ref={(el) => this.checkbox1 = el as HTMLElement}/></td>
+                        <td class="checkboxTD"><input type="checkbox" ref={(el) => this.checkbox1 = el as HTMLInputElement}/></td>
                         <td class="checkboxTD"><label id="option2">Datenschutzrichtlinien*</label></td>
                       </tr>
                       <tr>
-                        <td class="checkboxTD"><input type="checkbox" ref={(el) => this.checkbox2 = el as HTMLElement}/></td>
+                        <td class="checkboxTD"><input type="checkbox" ref={(el) => this.checkbox2 = el as HTMLInputElement}/></td>
                         <td class="checkboxTD"><label id="option3">Ich möchte den Email-Newsletter abonnieren.</label></td>
                       </tr>
                     </table> 
