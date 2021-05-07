@@ -17,12 +17,15 @@ export class HeaderLn {
   document.querySelector<HTMLElement>(".ebn1").style.height = "100vh";
 }
 
+
+
   render() {
    
-
+      //Platzhalter Könnte über eine Abfrage von einem Websocket erfragt werden
       let sites :Array<Array<Array<string>>>=[[["Seite1","Seite1.html"]],[["Seite2","Seite2.html"]],[["Seite3"],["Unterseite1","Unterseite1.html"]]];
       
       
+     
     let ebn1 :string;
     ebn1 = "";
     let ebn2 :string;
@@ -57,7 +60,7 @@ export class HeaderLn {
     return (
       
       <Host>
-        <slot><div class="ebn1" innerHTML={ebn1}><div class="exit" onClick={this.closeAll}>X</div></div>
+        <slot><div class="ebn1"  innerHTML={ebn1}><div class="exit" onClick={this.closeAll}>X</div></div>
         <div class="burger" onClick={this.openfirst}>
     <span class="sp1"></span>
     <span class="sp2"></span>
