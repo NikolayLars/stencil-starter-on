@@ -17,15 +17,18 @@
 }
 #infotitlerechts{
   position: relative;
-    left: 30%;
+    left: 27%;
     top: 8%;
     width: 15%;
 
 }
 #infotextrechts{
   position: relative;
-  left: 15%;
+  left: 10%;
   margin-top: 5%;
+  width: 400px;
+  line-height: 36px;
+  text-align: justify;
 }
 
 
@@ -50,6 +53,9 @@
 }
 #infotextlinks{
   position: relative;
-  left: -20%;
+  left: -24%;
   margin-top: 5%;
+  width: 400px;
+  line-height: 36px;
+  text-align: justify;
 }
