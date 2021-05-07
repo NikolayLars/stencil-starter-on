@@ -38,27 +38,34 @@ export class MapComponent {
           //Fehlerhafte Map, welcher Ort über Stencil übergeben werden kann
           //-------------------------------------------------------------------------------------------------------
         }
-        <div id="map">
-          <iframe width="700" height="440" src={source3(source)} frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
-        <br />
-        {
-          //-------------------------------------------------------------------------------------------------------
-          //Funktionierende map. Adresse kann manuell im src="" Link geändert werden
-          //-------------------------------------------------------------------------------------------------------
-        }
-        <div id="map">
-          <iframe
-            width="700"
-            height="440"
-            src="https://maps.google.com/maps?width=1400&amp;height=440&amp;hl=en&amp;q=Waldried%20str.%2010+(Test)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-        </div>
-        <br />
+        <table>
+          <tr>
+            <td>
+              <div id="map">
+                <iframe width="700" height="440" src={source3(source)} frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+              <br />
+            </td>
+            {
+              //-------------------------------------------------------------------------------------------------------
+              //Funktionierende map. Adresse kann manuell im src="" Link geändert werden
+              //-------------------------------------------------------------------------------------------------------
+            }
+            <td>
+              <div id="map">
+                <iframe
+                  width="700"
+                  height="440"
+                  src="https://maps.google.com/maps?width=1400&amp;height=440&amp;hl=en&amp;q=Waldried%20str.%2010+(Test)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+              </div>
+            </td>
+          </tr>
+        </table>
       </Host>
     );
   }
