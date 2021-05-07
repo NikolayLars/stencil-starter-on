@@ -51,13 +51,6 @@ export namespace Components {
         "location": string;
         "streetnumber": string;
     }
-    interface MellyComponent {
-        "img1": string;
-        "img2": string;
-        "img3": string;
-        "img4": string;
-        "img5": string;
-    }
     interface MenuComponent {
         "label": string;
         "label2": string;
@@ -88,6 +81,13 @@ export namespace Components {
         "urlone": string;
         "urlthree": string;
         "urltwo": string;
+    }
+    interface SliderComponent {
+        "img1": string;
+        "img2": string;
+        "img3": string;
+        "img4": string;
+        "img5": string;
     }
     interface TextComponent {
         "position": string;
@@ -148,12 +148,6 @@ declare global {
         prototype: HTMLMapComponentElement;
         new (): HTMLMapComponentElement;
     };
-    interface HTMLMellyComponentElement extends Components.MellyComponent, HTMLStencilElement {
-    }
-    var HTMLMellyComponentElement: {
-        prototype: HTMLMellyComponentElement;
-        new (): HTMLMellyComponentElement;
-    };
     interface HTMLMenuComponentElement extends Components.MenuComponent, HTMLStencilElement {
     }
     var HTMLMenuComponentElement: {
@@ -165,6 +159,12 @@ declare global {
     var HTMLMorizComponentElement: {
         prototype: HTMLMorizComponentElement;
         new (): HTMLMorizComponentElement;
+    };
+    interface HTMLSliderComponentElement extends Components.SliderComponent, HTMLStencilElement {
+    }
+    var HTMLSliderComponentElement: {
+        prototype: HTMLSliderComponentElement;
+        new (): HTMLSliderComponentElement;
     };
     interface HTMLTextComponentElement extends Components.TextComponent, HTMLStencilElement {
     }
@@ -193,9 +193,9 @@ declare global {
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
         "map-component": HTMLMapComponentElement;
-        "melly-component": HTMLMellyComponentElement;
         "menu-component": HTMLMenuComponentElement;
         "moriz-component": HTMLMorizComponentElement;
+        "slider-component": HTMLSliderComponentElement;
         "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
         "weather-ln": HTMLWeatherLnElement;
@@ -247,13 +247,6 @@ declare namespace LocalJSX {
         "location"?: string;
         "streetnumber"?: string;
     }
-    interface MellyComponent {
-        "img1"?: string;
-        "img2"?: string;
-        "img3"?: string;
-        "img4"?: string;
-        "img5"?: string;
-    }
     interface MenuComponent {
         "label"?: string;
         "label2"?: string;
@@ -285,6 +278,13 @@ declare namespace LocalJSX {
         "urlthree"?: string;
         "urltwo"?: string;
     }
+    interface SliderComponent {
+        "img1"?: string;
+        "img2"?: string;
+        "img3"?: string;
+        "img4"?: string;
+        "img5"?: string;
+    }
     interface TextComponent {
         "position"?: string;
         "slHeroHeadline"?: string;
@@ -303,9 +303,9 @@ declare namespace LocalJSX {
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
         "map-component": MapComponent;
-        "melly-component": MellyComponent;
         "menu-component": MenuComponent;
         "moriz-component": MorizComponent;
+        "slider-component": SliderComponent;
         "text-component": TextComponent;
         "user-card": UserCard;
         "weather-ln": WeatherLn;
@@ -323,9 +323,9 @@ declare module "@stencil/core" {
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
-            "melly-component": LocalJSX.MellyComponent & JSXBase.HTMLAttributes<HTMLMellyComponentElement>;
             "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
+            "slider-component": LocalJSX.SliderComponent & JSXBase.HTMLAttributes<HTMLSliderComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
             "weather-ln": LocalJSX.WeatherLn & JSXBase.HTMLAttributes<HTMLWeatherLnElement>;

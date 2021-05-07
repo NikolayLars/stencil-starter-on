@@ -1,4 +1,4 @@
-# melly-component
+# slider-component
 
 
 

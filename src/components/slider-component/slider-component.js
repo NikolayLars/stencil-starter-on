@@ -5,17 +5,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { Component, Host, h } from '@stencil/core';
-let MellyComponent = class MellyComponent {
+let SliderComponent = class SliderComponent {
     render() {
         return (h(Host, null,
             h("slot", null)));
     }
 };
-MellyComponent = __decorate([
+SliderComponent = __decorate([
     Component({
-        tag: 'melly-component',
-        styleUrl: 'melly-component.css',
+        tag: 'slider-component',
+        styleUrl: 'slider-component.css',
         shadow: true,
     })
-], MellyComponent);
-export { MellyComponent };
+], SliderComponent);
+export { SliderComponent };

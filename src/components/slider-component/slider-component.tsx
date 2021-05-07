@@ -1,12 +1,12 @@
 import { Component, Host, h, Prop,getAssetPath} from '@stencil/core';
 
 @Component({
-  tag: 'melly-component',
-  styleUrl: 'melly-component.css',
+  tag: 'slider-component',
+  styleUrl: 'slider-component.css',
 
   })
 
-export class MellyComponent {
+export class SliderComponent {
   
   @Prop() img1 = '0x0-Model3_10.jpg';
   @Prop() img2 = '0x0-Model3_12.jpg';
