@@ -1,8 +1,8 @@
 import { Component, h, Prop, Host, getAssetPath, State } from '@stencil/core';
 
 @Component({
-  tag: 'moriz-component',
-  styleUrl: 'moriz-component.css',
+  tag: 'footer-component',
+  styleUrl: 'footer-component.css',
   assetsDirs: ['assets'],
 })
 export class MorizComponent {

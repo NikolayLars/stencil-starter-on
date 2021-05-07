@@ -24,6 +24,29 @@ export namespace Components {
         "carnametwo": string;
         "plz": string;
     }
+    interface FooterComponent {
+        "city": string;
+        "imageFacebook": string;
+        "imageInstagram": string;
+        "imageLinkedIn": string;
+        "imageMastercard": string;
+        "imagePayPal": string;
+        "imageTwitter": string;
+        "imageVisa": string;
+        "imageWhatsapp": string;
+        "imageXing": string;
+        "imageYouTube": string;
+        "plz": string;
+        "siteone": string;
+        "sites": string;
+        "sitethree": string;
+        "sitetwo": string;
+        "socialMedia": any;
+        "street": string;
+        "urlone": string;
+        "urlthree": string;
+        "urltwo": string;
+    }
     interface HeaderComponent {
         "contact": string;
         "contacturl": string;
@@ -58,29 +81,6 @@ export namespace Components {
         "option1": HTMLElement;
         "option2": HTMLElement;
         "option3": HTMLElement;
-    }
-    interface MorizComponent {
-        "city": string;
-        "imageFacebook": string;
-        "imageInstagram": string;
-        "imageLinkedIn": string;
-        "imageMastercard": string;
-        "imagePayPal": string;
-        "imageTwitter": string;
-        "imageVisa": string;
-        "imageWhatsapp": string;
-        "imageXing": string;
-        "imageYouTube": string;
-        "plz": string;
-        "siteone": string;
-        "sites": string;
-        "sitethree": string;
-        "sitetwo": string;
-        "socialMedia": any;
-        "street": string;
-        "urlone": string;
-        "urlthree": string;
-        "urltwo": string;
     }
     interface SliderComponent {
         "img1": string;
@@ -118,6 +118,12 @@ declare global {
         prototype: HTMLFlipCardElement;
         new (): HTMLFlipCardElement;
     };
+    interface HTMLFooterComponentElement extends Components.FooterComponent, HTMLStencilElement {
+    }
+    var HTMLFooterComponentElement: {
+        prototype: HTMLFooterComponentElement;
+        new (): HTMLFooterComponentElement;
+    };
     interface HTMLHeaderComponentElement extends Components.HeaderComponent, HTMLStencilElement {
     }
     var HTMLHeaderComponentElement: {
@@ -154,12 +160,6 @@ declare global {
         prototype: HTMLMenuComponentElement;
         new (): HTMLMenuComponentElement;
     };
-    interface HTMLMorizComponentElement extends Components.MorizComponent, HTMLStencilElement {
-    }
-    var HTMLMorizComponentElement: {
-        prototype: HTMLMorizComponentElement;
-        new (): HTMLMorizComponentElement;
-    };
     interface HTMLSliderComponentElement extends Components.SliderComponent, HTMLStencilElement {
     }
     var HTMLSliderComponentElement: {
@@ -188,13 +188,13 @@ declare global {
         "anmeldeformular-component": HTMLAnmeldeformularComponentElement;
         "cookie-component": HTMLCookieComponentElement;
         "flip-card": HTMLFlipCardElement;
+        "footer-component": HTMLFooterComponentElement;
         "header-component": HTMLHeaderComponentElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
         "information-icon": HTMLInformationIconElement;
         "map-component": HTMLMapComponentElement;
         "menu-component": HTMLMenuComponentElement;
-        "moriz-component": HTMLMorizComponentElement;
         "slider-component": HTMLSliderComponentElement;
         "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
@@ -219,6 +219,29 @@ declare namespace LocalJSX {
         "carnamethree"?: string;
         "carnametwo"?: string;
         "plz"?: string;
+    }
+    interface FooterComponent {
+        "city"?: string;
+        "imageFacebook"?: string;
+        "imageInstagram"?: string;
+        "imageLinkedIn"?: string;
+        "imageMastercard"?: string;
+        "imagePayPal"?: string;
+        "imageTwitter"?: string;
+        "imageVisa"?: string;
+        "imageWhatsapp"?: string;
+        "imageXing"?: string;
+        "imageYouTube"?: string;
+        "plz"?: string;
+        "siteone"?: string;
+        "sites"?: string;
+        "sitethree"?: string;
+        "sitetwo"?: string;
+        "socialMedia"?: any;
+        "street"?: string;
+        "urlone"?: string;
+        "urlthree"?: string;
+        "urltwo"?: string;
     }
     interface HeaderComponent {
         "contact"?: string;
@@ -255,29 +278,6 @@ declare namespace LocalJSX {
         "option2"?: HTMLElement;
         "option3"?: HTMLElement;
     }
-    interface MorizComponent {
-        "city"?: string;
-        "imageFacebook"?: string;
-        "imageInstagram"?: string;
-        "imageLinkedIn"?: string;
-        "imageMastercard"?: string;
-        "imagePayPal"?: string;
-        "imageTwitter"?: string;
-        "imageVisa"?: string;
-        "imageWhatsapp"?: string;
-        "imageXing"?: string;
-        "imageYouTube"?: string;
-        "plz"?: string;
-        "siteone"?: string;
-        "sites"?: string;
-        "sitethree"?: string;
-        "sitetwo"?: string;
-        "socialMedia"?: any;
-        "street"?: string;
-        "urlone"?: string;
-        "urlthree"?: string;
-        "urltwo"?: string;
-    }
     interface SliderComponent {
         "img1"?: string;
         "img2"?: string;
@@ -298,13 +298,13 @@ declare namespace LocalJSX {
         "anmeldeformular-component": AnmeldeformularComponent;
         "cookie-component": CookieComponent;
         "flip-card": FlipCard;
+        "footer-component": FooterComponent;
         "header-component": HeaderComponent;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
         "information-icon": InformationIcon;
         "map-component": MapComponent;
         "menu-component": MenuComponent;
-        "moriz-component": MorizComponent;
         "slider-component": SliderComponent;
         "text-component": TextComponent;
         "user-card": UserCard;
@@ -318,13 +318,13 @@ declare module "@stencil/core" {
             "anmeldeformular-component": LocalJSX.AnmeldeformularComponent & JSXBase.HTMLAttributes<HTMLAnmeldeformularComponentElement>;
             "cookie-component": LocalJSX.CookieComponent & JSXBase.HTMLAttributes<HTMLCookieComponentElement>;
             "flip-card": LocalJSX.FlipCard & JSXBase.HTMLAttributes<HTMLFlipCardElement>;
+            "footer-component": LocalJSX.FooterComponent & JSXBase.HTMLAttributes<HTMLFooterComponentElement>;
             "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "information-icon": LocalJSX.InformationIcon & JSXBase.HTMLAttributes<HTMLInformationIconElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
-            "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
             "slider-component": LocalJSX.SliderComponent & JSXBase.HTMLAttributes<HTMLSliderComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
