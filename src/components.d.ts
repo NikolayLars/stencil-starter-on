@@ -6,12 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-<<<<<<< Updated upstream
-    interface AdrianComponent {
-        "textblockInhalt": string;
-    }
-=======
->>>>>>> Stashed changes
     interface AnmeldeformularComponent {
         "titel": string;
     }
@@ -49,12 +43,9 @@ export namespace Components {
         "infotitlelinks": string;
         "infotitlerechts": string;
     }
-<<<<<<< Updated upstream
-=======
     interface InformationIcon {
         "textblockInhalt": string;
     }
->>>>>>> Stashed changes
     interface MapComponent {
         "adress": string;
         "location": string;
@@ -145,15 +136,12 @@ declare global {
         prototype: HTMLInfoRasterElement;
         new (): HTMLInfoRasterElement;
     };
-<<<<<<< Updated upstream
-=======
     interface HTMLInformationIconElement extends Components.InformationIcon, HTMLStencilElement {
     }
     var HTMLInformationIconElement: {
         prototype: HTMLInformationIconElement;
         new (): HTMLInformationIconElement;
     };
->>>>>>> Stashed changes
     interface HTMLMapComponentElement extends Components.MapComponent, HTMLStencilElement {
     }
     var HTMLMapComponentElement: {
@@ -203,10 +191,7 @@ declare global {
         "header-component": HTMLHeaderComponentElement;
         "header-ln": HTMLHeaderLnElement;
         "info-raster": HTMLInfoRasterElement;
-<<<<<<< Updated upstream
-=======
         "information-icon": HTMLInformationIconElement;
->>>>>>> Stashed changes
         "map-component": HTMLMapComponentElement;
         "menu-component": HTMLMenuComponentElement;
         "moriz-component": HTMLMorizComponentElement;
@@ -217,12 +202,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-<<<<<<< Updated upstream
-    interface AdrianComponent {
-        "textblockInhalt"?: string;
-    }
-=======
->>>>>>> Stashed changes
     interface AnmeldeformularComponent {
         "titel"?: string;
     }
@@ -260,12 +239,9 @@ declare namespace LocalJSX {
         "infotitlelinks"?: string;
         "infotitlerechts"?: string;
     }
-<<<<<<< Updated upstream
-=======
     interface InformationIcon {
         "textblockInhalt"?: string;
     }
->>>>>>> Stashed changes
     interface MapComponent {
         "adress"?: string;
         "location"?: string;
@@ -325,10 +301,7 @@ declare namespace LocalJSX {
         "header-component": HeaderComponent;
         "header-ln": HeaderLn;
         "info-raster": InfoRaster;
-<<<<<<< Updated upstream
-=======
         "information-icon": InformationIcon;
->>>>>>> Stashed changes
         "map-component": MapComponent;
         "menu-component": MenuComponent;
         "moriz-component": MorizComponent;
@@ -348,10 +321,7 @@ declare module "@stencil/core" {
             "header-component": LocalJSX.HeaderComponent & JSXBase.HTMLAttributes<HTMLHeaderComponentElement>;
             "header-ln": LocalJSX.HeaderLn & JSXBase.HTMLAttributes<HTMLHeaderLnElement>;
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
-<<<<<<< Updated upstream
-=======
             "information-icon": LocalJSX.InformationIcon & JSXBase.HTMLAttributes<HTMLInformationIconElement>;
->>>>>>> Stashed changes
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
             "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
             "moriz-component": LocalJSX.MorizComponent & JSXBase.HTMLAttributes<HTMLMorizComponentElement>;
