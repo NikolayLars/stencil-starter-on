@@ -22,19 +22,10 @@
   /*grid-template-rows: 1fr 1fr 1fr;*/ 
 }
 .user-card:hover {
-  transform: translateX(+500px);
+  transform: translateX(+450px);
   transition: transform 1s ease-in-out;
 }
-/*
-#item1 {
-  vertical-align: top;
-}
-#item2 {
-  vertical-align: top;
-}
-#item3 {
-  vertical-align: top;
-}*/ 
+
 #bild {
   position: absolute;
   padding: 5px;
