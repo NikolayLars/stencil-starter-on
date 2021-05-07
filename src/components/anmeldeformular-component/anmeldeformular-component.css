@@ -206,6 +206,12 @@ td {
   font-size: 20px;
   font-weight: bold;
 }
+
+.closingOption {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
 /*
 /* The container /
 .container {

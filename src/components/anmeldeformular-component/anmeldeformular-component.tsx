@@ -49,7 +49,7 @@ closeAnmeldung(){
         <button class="openButton" onClick={() => this.openAnmeldung()}>Hier anmelden</button>
         <div class="modal" id="modal" ref={(el) => this.modal = el as HTMLElement}>
               <div class="modal-header"> 
-                {this.titel} 
+                {this.titel} <span class="closingOption" onClick={() => this.closeAnmeldung()}>&#10005;</span>
               </div> 
               <div class="modal-body">
                 <slot></slot>
