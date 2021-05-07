@@ -29,11 +29,17 @@ export class WeatherLn {
   
     fetch('https://extreme-ip-lookup.com/json/')
   .then( res => res.json())
+  .catch(function(error){
+    alert(error)
+  })
   .then(response => {
     let country = response.country;
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${appId}`).then(result => result.json())
     .then(data => {
        document.getElementById("weather").innerHTML=`<p>Land: ${country} ${Math.round(data.main.temp-273.15)} Grad</p>`;
+    })
+    .catch(function(error){
+      alert(error)
     });
   
   })
