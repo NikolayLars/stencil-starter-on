@@ -14,6 +14,7 @@
   text-align: center;
   line-height: 58px;
   color: white;
+  z-index: 1029;  
 }
 .OpenWeather:hover{
   cursor: pointer;
@@ -28,9 +29,8 @@
   bottom: 105px;
   border: none;
   border-radius: 15px;
-
-box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.70);
-z-index: 1029;
+  box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.70);
+  z-index: 1029;
 }
 
 #weather>p, .OpenWeather{
