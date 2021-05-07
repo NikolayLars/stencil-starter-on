@@ -6,6 +6,10 @@ import { Component, h, Prop, Host, getAssetPath, State } from '@stencil/core';
   assetsDirs: ['assets'],
 })
 export class MorizComponent {
+  //-------------------------------------------------------------------------------------------------------
+  //Propperties
+  //-------------------------------------------------------------------------------------------------------
+
   @Prop() street: string;
   @Prop() city: string;
   @Prop() plz: string;
@@ -33,13 +37,10 @@ export class MorizComponent {
   @Prop() imageXing = 'Xing.png';
   @Prop() imageYouTube = 'YouTube.png';
 
-  // ------------------
+  //-------------------------------------------------------------------------------------------------------
+  //Function toTop
+  //-------------------------------------------------------------------------------------------------------
 
-  @Prop() sites: string;
-
-  @State() sitesObj: string[] = [];
-
-  //----------------------
   private toTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -47,6 +48,11 @@ export class MorizComponent {
   render() {
     return (
       <Host>
+        {
+          //-------------------------------------------------------------------------------------------------------
+          //btn zum Seitenanfang
+          //-------------------------------------------------------------------------------------------------------
+        }
         <div id="footer">
           <div id="tableWrapper">
             <div class="tableRow">
@@ -54,6 +60,11 @@ export class MorizComponent {
                 move to top
               </button>
             </div>
+            {
+              //-------------------------------------------------------------------------------------------------------
+              //Social Media Icons
+              //-------------------------------------------------------------------------------------------------------
+            }
             <div class="tableRow">
               <h1>Stay in touch with us</h1>
             </div>
@@ -71,6 +82,11 @@ export class MorizComponent {
 
               <img class="logosSM" src={getAssetPath(`./assets/${this.imageWhatsapp}`)} alt="Logo Whatsapp" />
             </div>
+            {
+              //-------------------------------------------------------------------------------------------------------
+              //Variable Adresse
+              //-------------------------------------------------------------------------------------------------------
+            }
             <div class="tableRow">
               <div>
                 <h2>Adresse:</h2>
@@ -78,6 +94,11 @@ export class MorizComponent {
                 {this.city} <br />
                 {this.plz}
               </div>
+              {
+                //-------------------------------------------------------------------------------------------------------
+                //Variable Unternehmensseiten
+                //-------------------------------------------------------------------------------------------------------
+              }
               <div>
                 <h2>Unternehmensseiten:</h2>
                 <a id="sitelinks" href={this.urlone}>
@@ -93,6 +114,11 @@ export class MorizComponent {
                 </a>
               </div>
             </div>
+            {
+              //-------------------------------------------------------------------------------------------------------
+              //Logos Zahlarten
+              //-------------------------------------------------------------------------------------------------------
+            }
             <div class="tableRow">
               <img class="logosPay" src={getAssetPath(`./assets/${this.imagePayPal}`)} alt="Logo PayPal" />
               <img class="logosPay" src={getAssetPath(`./assets/${this.imageVisa}`)} alt="Logo Visa" />
