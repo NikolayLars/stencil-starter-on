@@ -38,7 +38,6 @@ export namespace Components {
         "imageYouTube": string;
         "plz": string;
         "siteone": string;
-        "sites": string;
         "sitethree": string;
         "sitetwo": string;
         "socialMedia": any;
@@ -234,7 +233,6 @@ declare namespace LocalJSX {
         "imageYouTube"?: string;
         "plz"?: string;
         "siteone"?: string;
-        "sites"?: string;
         "sitethree"?: string;
         "sitetwo"?: string;
         "socialMedia"?: any;
