@@ -1,13 +1,12 @@
 import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'adrian-component',
-  styleUrl: 'adrian-component.css',
+  tag: 'information-icon',
+  styleUrl: 'information-icon.css',
 })
-export class AdrianComponent {
+export class informationIconComponent {
 
   @Prop() textblockInhalt :string;
-  /*{this.textblockInhalt}*/
 
   render() {
 
