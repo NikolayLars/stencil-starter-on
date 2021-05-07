@@ -9,7 +9,9 @@
     <title>Tesla Kaufen.de</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
   </head>
+
   <header>
+    <!--Header-component --------------------------------------------------------------------------- -->
     <header-component
       home="Home"
       homeurl="https://www.tesla.com/de_de"
@@ -20,6 +22,7 @@
     ></header-component>
   </header>
   <body>
+    <!--Menü-component --------------------------------------------------------------------------- -->
     <header-ln></header-ln>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -37,7 +40,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!--bootstrap-->
+    <!--bootstrap --------------------------------------------------------------------------- -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -49,15 +52,16 @@
       crossorigin="anonymous"
     ></script>
     <header-ln></header-ln>
+    <!--cookie-component --------------------------------------------------------------------------- -->
     <cookie-component titel="Cookie-Einstellungen">
       Guten Tag! Schön, dass du hier bist :) Wir wollen dir das allerbeste Nutzererlebnis bieten. Darum nutzen wir Cookies. Das hat null komma null eigennützige Zwecke und ist nur
       für dich. Deine Daten sind zu Hundert Prozent bei uns sicher! Sicherer als beim PSUS (Private Secret Ultra Service). Du fragst dich, warum du noch nie von dem gehört hast?
       Weil er so geheim und ultra-secret ist. Und deine Daten sind bei uns NOCH sicherer.
     </cookie-component>
+    <!--anmeldeformular-component --------------------------------------------------------------------------- -->
     <anmeldeformular-component titel="Anmeldeformular"></anmeldeformular-component>
 
-    <!--<menu-component label="Teslareihe" label2="Farbe">
-    </menu-component>-->
+    <!--Ein- und Ausklapp-component --------------------------------------------------------------------------- -->
 
     <text-component sl-hero-headline="jetzt nicht im Angebot! &nbsp; " position="right">
       <div slot="text-component-product">
@@ -85,32 +89,37 @@
         <p>Tesla Model Y</p>
       </div>
     </text-component>
-
+    <!--user-card-component --------------------------------------------------------------------------- -->
     <div>
       <user-card>
-        <div id="item1" slot="name"> Name: Peter Maximilian Lustig</div>
-        <div id="item2" slot="email"> Email: peter.lustig@gmx.net</div>
-        <div id="item3" slot="telefon"> Tel.: 0175 1213132</div>
+        <div id="item1" slot="name">Name: Peter Maximilian Lustig</div>
+        <div id="item2" slot="email">Email: peter.lustig@gmx.net</div>
+        <div id="item3" slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
       <user-card>
-        <div slot="name"> Name: Joana Maria Schwamm</div>
-        <div slot="email"> Email: joana.schwamm@net.de</div>
-        <div slot="telefon"> Tel.: 0175 1213132</div>
+        <div slot="name">Name: Joana Maria Schwamm</div>
+        <div slot="email">Email: joana.schwamm@net.de</div>
+        <div slot="telefon">Tel.: 0175 1213132</div>
       </user-card>
     </div>
-
+    <!--weather-component --------------------------------------------------------------------------- -->
     <weather-ln></weather-ln>
     <header-ln></header-ln>
-
+    <!--slider-component --------------------------------------------------------------------------- -->
     <slider-component></slider-component>
+    <!--user-card-component (zweiter Teil) ------------------------------------------------------- -->
     <user-card>
-      <div slot="text"> Der Tesla X ist ein super Prdukt. Gut für alles... Umwelt, Leben, Natur. Deshalb kaufe ihn.</div>
+      <div slot="text">Der Tesla X ist ein super Prdukt. Gut für alles... Umwelt, Leben, Natur. Deshalb kaufe ihn.</div>
     </user-card>
+    <!--flip-card-component --------------------------------------------------------------------------- -->
     <flip-card carnameone="Model 3" cardescriptionone="Blue" carnametwo="Model 3" cardescriptiontwo="White" carnamethree="Model 3" carDescriptionthree="Grey"> </flip-card>
+    <!--info-raster-component --------------------------------------------------------------------------- -->
     <info-raster infotitlerechts="TESLA3" infotitlelinks="TESLAS" infdescriptionlinks="TESLA ist super cool" infdescriptionrechts="TESLA ist super cool- wirklich!!!"></info-raster>
+    <!--map-component --------------------------------------------------------------------------- -->
     <map-component location="Schwäbisch Hall" adress="Lotharweg" streetNumber="10"></map-component>
   </body>
   <footer>
+    <!--footer-component --------------------------------------------------------------------------- -->
     <footer-component
       street="Musterstr.1"
       city="mustercity"
