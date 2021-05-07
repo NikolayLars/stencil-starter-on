@@ -1,4 +1,4 @@
-# adrian-component
+# information-icon
 
 
 
