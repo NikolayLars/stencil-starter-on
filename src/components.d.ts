@@ -73,14 +73,6 @@ export namespace Components {
         "location": string;
         "streetnumber": string;
     }
-    interface MenuComponent {
-        "label": string;
-        "label2": string;
-        "label3": string;
-        "option1": HTMLElement;
-        "option2": HTMLElement;
-        "option3": HTMLElement;
-    }
     interface SliderComponent {
         "img1": string;
         "img2": string;
@@ -153,12 +145,6 @@ declare global {
         prototype: HTMLMapComponentElement;
         new (): HTMLMapComponentElement;
     };
-    interface HTMLMenuComponentElement extends Components.MenuComponent, HTMLStencilElement {
-    }
-    var HTMLMenuComponentElement: {
-        prototype: HTMLMenuComponentElement;
-        new (): HTMLMenuComponentElement;
-    };
     interface HTMLSliderComponentElement extends Components.SliderComponent, HTMLStencilElement {
     }
     var HTMLSliderComponentElement: {
@@ -193,7 +179,6 @@ declare global {
         "info-raster": HTMLInfoRasterElement;
         "information-icon": HTMLInformationIconElement;
         "map-component": HTMLMapComponentElement;
-        "menu-component": HTMLMenuComponentElement;
         "slider-component": HTMLSliderComponentElement;
         "text-component": HTMLTextComponentElement;
         "user-card": HTMLUserCardElement;
@@ -268,14 +253,6 @@ declare namespace LocalJSX {
         "location"?: string;
         "streetnumber"?: string;
     }
-    interface MenuComponent {
-        "label"?: string;
-        "label2"?: string;
-        "label3"?: string;
-        "option1"?: HTMLElement;
-        "option2"?: HTMLElement;
-        "option3"?: HTMLElement;
-    }
     interface SliderComponent {
         "img1"?: string;
         "img2"?: string;
@@ -302,7 +279,6 @@ declare namespace LocalJSX {
         "info-raster": InfoRaster;
         "information-icon": InformationIcon;
         "map-component": MapComponent;
-        "menu-component": MenuComponent;
         "slider-component": SliderComponent;
         "text-component": TextComponent;
         "user-card": UserCard;
@@ -322,7 +298,6 @@ declare module "@stencil/core" {
             "info-raster": LocalJSX.InfoRaster & JSXBase.HTMLAttributes<HTMLInfoRasterElement>;
             "information-icon": LocalJSX.InformationIcon & JSXBase.HTMLAttributes<HTMLInformationIconElement>;
             "map-component": LocalJSX.MapComponent & JSXBase.HTMLAttributes<HTMLMapComponentElement>;
-            "menu-component": LocalJSX.MenuComponent & JSXBase.HTMLAttributes<HTMLMenuComponentElement>;
             "slider-component": LocalJSX.SliderComponent & JSXBase.HTMLAttributes<HTMLSliderComponentElement>;
             "text-component": LocalJSX.TextComponent & JSXBase.HTMLAttributes<HTMLTextComponentElement>;
             "user-card": LocalJSX.UserCard & JSXBase.HTMLAttributes<HTMLUserCardElement>;
